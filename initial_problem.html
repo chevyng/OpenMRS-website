@@ -5,6 +5,7 @@
 <script src="http://code.highcharts.com/adapters/standalone-framework.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 
     <meta charset="utf-8">
@@ -169,6 +170,73 @@
                             Kidney disease may need treatment with a combination of medication and dietary changes.
                             More serious cases may require dialysis (a treatment where waste products are artificially removed from the body) or a kidney transplant.</p>
                         </p>
+
+                        <div id="test2" style="width:100%; height:400px;"></div>
+                        <script> 
+                        $(function () { 
+
+                            var chart = new Highcharts.Chart({
+                                chart: {
+                                //alignTicks: false,
+                                type: 'pie',
+                                renderTo: 'test2'
+                            },
+                             title: {
+                              text: 'Total of 399,675 life years lost due to mortality and ill-health in 2010'
+                          },
+                          tooltip: {
+                            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                        },
+                        plotOptions: {
+                         pie: {
+                            allowPointSelect: true,
+                            cursor: 'pointer',
+                            dataLabels: {
+                                enabled: true,
+                                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                 style: {
+                                  color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                }
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Diseases',
+                        colorByPoint: true,
+                        data: [{
+                         name: 'Others',
+                         y: 15
+                          }, {
+                           name: 'Cardio Vascular-Diseases',
+                            y: 20,
+                             sliced: true,
+                             selected: true
+                         }, {
+                            name: 'Cancer',
+                            y: 19
+                             }, {
+                                name: 'Neurological, Vision and Hearing Disorders',
+                                y: 14
+                            }, {
+                             name: 'Diabetes-mellitus',
+                              y: 10
+                          }, {
+                           name: 'Mental Disorders',
+                           y: 7
+                       },{
+                        name: 'Musculo-Skeletal Diseases',
+                        y: 6
+                    }, {
+                        name: 'Injuries',
+                        y: 5
+                    }, {
+                        name: 'Chronic Respiratory Diseases',
+                        y: 4
+                        }]
+                    }]
+                });
+});</script>
+
 
 
                         <p class="section-subheading-left"> <b> <font color="#15317E" style="Times New Roman;">Signs and symptoms of hypertension</b> </font> </p>
