@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
+<script src="http://code.highcharts.com/adapters/standalone-framework.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Chevy Ng">
 
     <title>OpenMRS-Diabetes</title>
 
@@ -28,7 +33,7 @@
     <link href="css/carousel.css" rel="stylesheet">
 	<link href="css/navbar-fixed-top.css" rel="stylesheet">
 	<link href="css/landing-page.css" rel="stylesheet">
-  </head>
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -63,7 +68,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overview <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="initial_problem.html">Initial Problem</a></li>
+                <li><a href="#">Initial Problem</a></li>
                 <li><a href="client.html">Client</a></li>
               </ul>
             </li>
@@ -80,115 +85,65 @@
 	         <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analysis <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="requirement.html">Requirement</a></li>
+                <li><a href="requirement.html">Requirements</a></li>
                 <li><a href="research.html">Research</a></li>
               </ul>
             </li>
 			
 			<li><a href="tools.html">Tools</a></li>
 			<li><a href="design.html">Design</a></li>
-			
-              <li class="dropdown">
+			  
+        <li class="dropdown">
               <a href="development.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="deployment.html">Deployment</a></li>
               </ul>
             </li>
-            
-          </ul>
+
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
 
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>OpenMRS-Diabetes</h1>
-                        <h3 style="color:orange">In collaboration with Bupa</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.intro-header -->
-
     <!-- Page Content -->
 
-	<a  name="services"></a>
     <div class="content-section-a">
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-sm-6 col-lg-offset-1">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Abstract</h2>
-                    <p class="lead">Healthcare system is improving from a doctor-centric world to a patient-centric one based on personal healthcare record and open-source software. This project aims to enable users to use mobile applications that will track their vital signs via wearable devices (iOS HealthKit, Android GoogleFit or Microsoft Health), keep track of their lifestyle as well as medical/family record. This data will then be sent to an OpenMRS (Open Medical Record System) that acts like a concept dictionary based on the principle that information should be stored in a way which makes it easy to summarize and analyse. Furthermore, the data will then be processed and analysed being accessible via a mobile application aiming to prevent possible causes of diabetes and making an impact in quality of care, safety and efficiency.</p>
+                    <h2 class="section-heading"><font color="#15317E">Steps to deployment</font></h2>
+                      <h2 class="section-subheading">Web Platform</h2>
 
-                </div>                
-            </div>
+                      <img src="images/openmrslogo.png" alt="" align="left">
 
+            <p class="paragraph" align="left"  style="Times New Roman;"> OpenMRS is a collaborative open source project to develop software to support the delivery of health care in developing countries. <br /> This section will get you started installing and configuring OpenMRS from start to finish. These instructions are for manually installing OpenMRS. </p>
+
+            <h2 class="section-subheading" align="left">System Requirements</h2>
+            <p class="paragraph" align="left"  style="Times New Roman;"> The hardware required depends on the size of your implementation. For small implementations, OpenMRS can be run on just about any desktop or laptop. <br />  <u> Minimum Requirements - 100s of patients </u> <br /> 1 GHz processor or better, 256 MB of memory or more, 40 GB hard drive or larger. You can set up the server on a laptop for demonstration or testing purposes. <br /> <u> Minimum Requirements - 10,000 patients </u> < br/> 1.5+ GHz, 2 GB of memory, and 150+ GB of disk space with RAID  and appropriate backup facilities. <br /> <u> Minimum Requirements - 250,000 patients </u> <br /> AMPATH is supporting an OpenMRS instance with over 250,000 patients with two 2.26 GHz quad processors, 16 GB of memory, and 500 GB of disk space with RAID and appropriate backup facilities.</p>
+
+            <h2 class="section-subheading" align="left">Install Java</h2>
+             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Download the latest stable release of the Java Runtime Environment (JRE). For the standalone version you will only need the Java Runtime Environment (JRE) not Java Development Kit (JDK). Minimum version required is Java 6 although it is recommended to install Java 7</p>
+
+             <h2 class="section-subheading" align="left">Install Tomcat</h2>
+             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Download Tomcat 6.0.29. You can use the exe version, which installs Tomcat as a service or the zip archive. <br /> <u> Step 2 </u> Execute the file and install running the default settings. <br /> <u> Step 3 </u> Accept default destination folder <br /> <u> Step 4 </u> Accept HTTP/1.1 Connector Port 8080. <br /> <u> Step 5 </u> Set Administrator login (username/password). <br /><u> Step 6 </u>Accept the Java directory detected. <br /> <u> Step 7 </u> Select Install Tomcat. <br /> <u> Step 8 </u>After installation is complete you will need to change users roles by following this directory on your windows explorer: C:\Program Files\Apache Software Foundation\Tomcat 6.0\conf. <br /> <u> Step 9 </u> Open the Tomcat users file (e.g. C:\Program Files\Apache Software Foundation\Tomcat 6.0\conf\tomcat-users.xml) in a text editor. <br /> <u> Step 10 </u> Create a new user called admin with the roles admin, manager and manager-gui. This file should be protected so you will need to open it as Administrator (right-click on your text editor and select "Run as administrator") user name="admin" password="XXXXXX" roles="tomcat,admin,manager,manager-gui"/  </p>
+
+             <h2 class="section-subheading" align="left">Install MySQL</h2>
+             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Download the latest MySQL installer. <br /> <u> Step 2 </u> Run the install program (.msi). <br /> <u> Step 3 </u> Accept the license agreement. <br /> <u> Step 4 </u> Under Feature Selection select Full Installation Setup and select the right Architecture for your computer (32-bit / 64-bit). <br /> <u> Step 5 </u> Click next and you will be shown a list of applications that you need in order to meet the requirements for installing all services. Make sure you satisfy all the requirements, if not, please install the missing applications on your machine. <br /><u> Step 6 </u>On the next configuration options select “Developer Machine”. <br /> <u> Step 7 </u> Leave all other settings to default. <br /> <u> Step 8 </u>Enter a username and password. Note: These will be the credentials for the user with root privileges. Do Not Forget the Password. <br /> <u> Step 9 </u> Click next and finish the installation. </p>
+
+             <h2 class="section-subheading" align="left">Deploy OpenMRS</h2>
+             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Ensure that Tomcat is started. <br /> <u> Step 2 </u> Download the latest stable release of OpenMRS. <br /> <u> Step 3 </u> Navigate to http://localhost:8080/manager/html and enter your Tomcat administrator credentials (username and password chosen when installing Tomcat). <br /> <u> Step 4 </u> In the Tomcat Web Application Manager, enter the location of the downloaded openmrs.war fileto deploy. <br /> <u> Step 5 </u> At the end of this process, the web page will refresh and /openmrs should be displayed under Applications. Apache Tomcat should also start the application (Running = True; and in Commands, Stop is underlined). </p>
+
+             <h2 class="section-subheading" align="left">Start using OpenMRS</h2>
+             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Ensure that Tomcat is started.After you have finished configuring OpenMRS, RELOAD the application in Tomcat Manager. <br /> <u> Step 2 </u>Open http://localhost:8080/openmrs. You will see a login page. If you're using the OpenMRS standalone package, the page is at http://localhost:8080/openmrs-standalone. </p>
+          </div>
         </div>
-        <!-- /.container -->
+      </div>
+	
+	</div>
+		<!-- /.content-section-a -->
 
-    </div>
-    <!-- /.content-section-a -->
-
-  
-    <!-- /.content-section-b -->
-
-    <div class="content-teamprofile">
-
-        <div class="container marketing">
-
-            <div class="row">
-                <div class="col-lg- col-sm-">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Meet The Team!</h2>
-					<h4>2nd Year UCL Computer Science Students</h4>
-                </div>
-				
-				<div class="col-lg-4">
-					<img class="img-circle" src="images/chevy1.png" alt=""  width="200px" height="200px">
-					<h2>Chevy Ng</h2>
-					<p>Technical Lead, Chief Editor</p>
-					<p>zhi.ng.14@ucl.ac.uk</p>
-				</div><!-- /.col-lg-4 -->
-        
-				<div class="col-lg-4">
-					<img class="img-circle" src="images/diana.jpg" alt=""  width="200px" height="200px">					
-					<h2>Diana Darie</h2>
-					<p>Group Manager, Client Liaison </p>
-					<p>diana.darie.14@ucl.ac.uk </p>
-				</div><!-- /.col-lg-4 -->
-			
-				<div class="col-lg-4">
-					<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" width="200px" height="200px">
-					<h2>Sam Mai</h2>
-					<p> Deputy Manager, Chief Researcher, Chief Editor</p>
-					<p> sam.mai.14@ucl.ac.uk </p>
-				</div><!-- /.col-lg-4 -->
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
 
 
     <!-- Footer -->
