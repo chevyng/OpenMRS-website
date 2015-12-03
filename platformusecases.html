@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Research Page">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="">
     <title>OpenMRS-Diabetes</title>
 
     <!-- Bootstrap core CSS -->
@@ -110,111 +110,416 @@
         <div class="container">
 
                     <h2 class="content-heading">OpenMRS Platform Use Cases</h2>
-                   
-                   <table>
-                    <thead>
-                        <tr>
-                            <th>Use Case</th>
-                            <th>ID</th>
-                            <th>Brief Description</th>
-                            <th>Primary Actors</th>
-                            <th>Secondary Actions</th>
-                            <th>Preconditions</th>
-                            <th>Main Flow</th>
-                            <th>PostCondition</th>
-                            <th>Alternative Flows</th>
-                        </tr>
+                 
+              <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial sans-serif;font-size:14px; padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px; font-weight:normal; padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+.tg .tg-uqo3{background-color:#efefef;text-align:left;vertical-align:top}
+.tg .tg-baqh{text-align:left;vertical-align:top}
+.tg .tg-yzt1{background-color:#efefef;vertical-align:top}
+.tg .tg-yw4l{vertical-align:top}
+</style>
 
-                        <tr>
-                            <td>Login Page</td>
-                            <td>1</td>
-                            <td>The doctor/user wants to login on the web platform</td>
-                            <td>User</td>
-                            <td>System</td>
-                            <td>-</td>
-                            <td>1. The user accessed the OpenMRS platform and can view the login screen. <br />
-                                2. The user can enter their credentials (username and password) to login. 
-                            </td>
-                            <td>The user is logged onto the platform.</td>
-                            <td>Forgot Password Case <br /> 
-                                Help Case
-                            </td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                      
-                        <tr>
-                            <td>Alternative flow for 1 – Forgot Password Case</td>
-                            <td>1.1</td>
-                            <td>The user has forgotten their passwordThe doctor/user wants to login on the web platform</td>
-                            <td>User</td>
-                            <td>System</td>
-                            <td>The user accessed the login page of the platform</td>
-                            <td>1. If the user forgot their password, they will be redirected to the “Forgot Password” Page <br />
-                                2. The user needs to type in their username. <br />
-                                3. The password will then be changed. <br />
-                            </td>
-                            <td>The password of the user has been changed.</td>
-                            <td>-</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
+<table  width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1"  width="15%">Use Case</td>
+    <th class="tg-yw4l">Login Page</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">1</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">The doctor/user wants to login on the web platform</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">System</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">-</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The user accessed the OpenMRS platform and can view the login screen. <br />
+                        2. The user enter their credentials (username and password) to login. <br />
+                        3. The user selects the log in option. <br />
+                        4. The system will display the Home Page</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">The user is logged onto the platform.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">Forgot PasswordCase<br>Help Case</th>
+  </tr>
+</table>
 
-                       <tr>
-                            <td>Find Patient</td>
-                            <td>2</td>
-                            <td>The user wants to find a patient</td>
-                            <td>User</td>
-                            <td>System</td>
-                            <td>The user accessed is logined on the OpenMRS platform</td>
-                            <td>1. The user accesses the "Find/Create Patient" tab on the menu. <br />
-                                2. The user will be redirected to the "Find Patient" page. In the Patient Search, the user can type in the patient's name (let's say "John") or identifier.  <br />
-                                3. A list with all the patients called "John" will be displayed. The user can access the data of the patient by clicking on the table row.<br />
-                                4. The user will be redirected to the patient page where they can access several information (the overview tab which presents data regarding the Patient Actions, Programs, Relationships, Allergies, Problem List; the visits page which presents information on the last patient's visits; the demographics tab which presents the patient's name as well as the address, the graph tab which shows a graph depending on the concepts chosen - for example: pulse; and the form entry tab which gives data on the registered encounters.)
-                            </td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
+<br />
 
 
+<table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Alternative flow for 1 – Forgot Password Case</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">1.1</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">The user has forgotten their password</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">System</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">-</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. If the user forgot their password, they will be redirected to the “Forgot Password” Page <br />
+                        2. The user needs to type in their username. <br />
+                        3. The password will then be changed. <br />
+  </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l"The password of the user has been changed.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">-</th>
+  </tr>
+</table>
 
-                       <tr>
-                            <td>Start Patient's Visit</td>
-                            <td>3</td>
-                            <td>The user wants to start a patient's visit</td>
-                            <td>User</td>
-                            <td>System</td>
-                            <td>The user accessed is logined on the OpenMRS platform</td>
-                            <td>1. The user accesses the "Find/Create Patient" tab on the menu. <br />
-                                2. The user will be redirected to the "Find Patient" page. In the Patient Search, the user can type in the patient's name. <br />
-                                3. A list with all the patients having the inputed name will be displayed. The user can access the data of the patient by clicking on the table row.<br />
-                                4. The system will redirect the user to the Patient's Page. By clicking the "Start Visit" button, the user will be redirected to the a new page where they need to complete a form with visit details and ecounters. <br />
-                                5. In the Visit Details Tab the user needs to input the patient's name, visit type, start time and end time of the visit, the location and indication (concept name or id). <br />
-                                5. In the encounters'tab the user can add new encounters.
-                                6. The user can then save the formed which will then be saved in the sever's database.
-                            </td>
-                            <td>A new visit has been added to the patient's page and saved into the server's database.</td>
-                            <td>-</td>
-                        </tr>
+<br />
 
-                            <td>Create New Patient</td>
-                            <td>4</td>
-                            <td>The user wants to create a new patient</td>
-                            <td>User</td>
-                            <td>System</td>
-                            <td>The user accessed is logined on the OpenMRS platform</td>
-                            <td>1. The user has to access the Create/Find Patient Tab in the Home Menu. <br />
-                                2. In the Create Patient tab the user needs to introduce the data of the new patient. (person name, birthday/age, gender)
-                                3. By clicking on the Create Patient Button, the user will be redirected on a new page where they have to input more patient's data such as id number, demographics and address.
-                            </td>
-                            <td>A new patient has been created.</td>
-                            <td>-</td>
-                        </tr>
 
-                        
-                        </tbody>
-                    </table>
-                </table>
+<table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Find Patient</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">2</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">The user wants to find a patient</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">System</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">The user is logined on the OpenMRS platform</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The user accesses the "Find/Create Patient" tab on the menu. <br />
+                        2. The user will be redirected to the "Find Patient" page. In the Patient Search, the user can type in the patient's name (let's say "John") or identifier. <br />
+                        3. A list with all the patients called "John" will be displayed. The user can access the data of the patient by clicking on the table row. <br />
+                        4. The user will be redirected to the patient page where they can access several information (the overview tab which presents data regarding the Patient Actions, Programs, Relationships, Allergies, Problem List; the visits page which presents information on the last patient's visits; the demographics tab which presents the patient's name as well as the address, the graph tab which shows a graph depending on the concepts chosen - for example: pulse; and the form entry tab which gives data on the registered encounters.) <br />
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">-</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">-</th>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Start Patient's Visit</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">3</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">The user wants to start a patient's visit</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">System</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">The user is logined on the OpenMRS platform.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The user accesses the "Find/Create Patient" tab on the menu. <br />
+                        2. The user will be redirected to the "Find Patient" page. In the Patient Search, the user can type in the patient's name. <br /> 
+                        3. A list with all the patients having the inputed name will be displayed. The user can access the data of the patient by clicking on the table row. <br />
+                        4. The system will redirect the user to the Patient's Page. By clicking the "Start Visit" button, the user will be redirected to the a new page where they need to complete a form with visit details and ecounters. <br />
+                        5. In the Visit Details Tab the user needs to input the patient's name, visit type, start time and end time of the visit, the location and indication (concept name or id). <br /> 
+                        6. In the encounters'tab the user can add new encounters. 6. The user can then save the formed which will then be saved in the sever's database. <br />
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">A new visit has been added to the patient's page and saved into the server's database.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">-</th>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Create New Patient</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">4</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">The user wants to create a new patient</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">System</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">The user is logined on the OpenMRS platform</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The user has to access the Create/Find Patient Tab in the Home Menu. <br />
+                        2. In the Create Patient tab the user needs to introduce the data of the new patient. (person name, birthday/age, gender) 3. By clicking on the Create Patient Button, the user will be redirected on a new page where they have to input more patient's data such as id number, demographics and address. <br />
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">A new patient has been created.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">-</th>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Create a new Concept</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">5</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">    The user wants to create a new concept.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">System</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">The user is logined on the OpenMRS platform</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The user has to access the Create/Find Patient Tab in the Home Menu. <br />
+                        2. In the Create Patient tab the user needs to introduce the data of the new patient. (person name, birthday/age, gender) 3. By clicking on the Create Patient Button, the user will be redirected on a new page where they have to input more patient's data such as id number, demographics and address. <br />
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">A new patient has been created.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">-</th>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Find Concept</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">6</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l"> The user wants to find a concept in the database.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">System</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">The user is logined on the OpenMRS platform</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The user has to access the Dictionary Tab in the Home Page. <br />
+                        2. The user will then write the name or the id of the concept in the "find concept" tab. <br />
+                        3. Information about the concept will be displayed.<br />
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">Information about the concept will be displayed.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">1.Cancel Form Use Case <br />
+                        2. Delete Concept Use case</th>
+  </tr>
+
+
+
+  <table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Capture Vitals</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">7</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l"> The user wants to capture patient's vitals.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">System</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">The user is logined on the OpenMRS platform</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The user selects the "capture vitals" option from the menu. <br />
+                        2. A list with all the patients will be displayed. <br />
+                        3. The user selects one of the patients.<br />
+                        4. The user will fill in a form with the patient's vitals. (height, weight, pulse, heart rate etc) <br />
+                        5. The user will select the save option to save the form. <br />
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">The information will be stored in the server's database.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">1.Cancel Form Use Case 
+    </th>
+  </tr>
+
+  <br />
+
+  <table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Create an appointment</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">8</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">The user wants to create a new appointment.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">System</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">The user is logined on the OpenMRS platform</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The user selects the "Appointements" option from the menu. <br />
+                        2. In the Existing Appointements tab the user will choose the "Schedule new appointment" option. <br />
+                        3. The user will be asked to choose between "Schedule New Appointment" and "Add Walk-In Appointment".<br />
+                        4. After choosing the "Schedule new Appointment" option, the user will be redirected to the "Create Appointment" page<br />
+                        5. The user will have to fill in a form with their details as well as appointment properties (location, provider, date), select a time and also enter any additional notes. <br />
+                        6. The user will then save the form. <br />
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">A new appointment for the upatient has been created.</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">Cancel Form Use Case <br />
+    </th>
+  </tr>
+  <br />
+
+</table>
+
+
     </div>
 
 
