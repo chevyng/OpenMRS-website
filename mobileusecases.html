@@ -109,7 +109,7 @@
 
         <div class="container">
 
-                    <h2 class="content-heading">OpenMRS Platform Use Cases</h2>
+                    <h2 class="content-heading">Android Client Use Cases</h2>
                  
               <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
@@ -124,7 +124,7 @@
 <table  width="100%" class="tg">
   <tr>
     <td class="tg-yzt1"  width="15%">Use Case</td>
-    <th class="tg-yw4l">Login Page</th>
+    <th class="tg-yw4l">Login</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Id</td>
@@ -132,7 +132,7 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Brief Description</td>
-    <th class="tg-yw4l">The doctor/user wants to login on the web platform</th>
+    <th class="tg-yw4l">Users can log in</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Primary Actors</td>
@@ -140,26 +140,27 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Secondary Actors</td>
-    <th class="tg-yw4l">System</th>
+    <th class="tg-yw4l">None</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Preconditions</td>
-    <th class="tg-yw4l">-</th>
+    <th class="tg-yw4l">1. User must have the app installed</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Main Flow</td>
-    <th class="tg-yw4l">1. The user accessed the OpenMRS platform and can view the login screen. <br />
-                        2. The user enter their credentials (username and password) to login. <br />
-                        3. The user selects the log in option. <br />
-                        4. The system will display the Home Page</th>
+    <th class="tg-yw4l">1. User selects app icon on the screen. <br />
+                        2. Android client displays login screen. <br />
+                        3. User enters details. <br />
+                        4. User selects log in option. <br />
+                        5. Android client displays the home page</th>
   </tr>
   <tr>
     <td class="tg-yzt1">PostCondition</td>
-    <th class="tg-yw4l">The user is logged onto the platform.</th>
+    <th class="tg-yw4l">1. User successfully logged in.</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Alternative Flows</td>
-    <th class="tg-yw4l">Forgot PasswordCase<br>Help Case</th>
+    <th class="tg-yw4l">WrongLogin</th>
   </tr>
 </table>
 
@@ -169,7 +170,7 @@
 <table width="100%" class="tg">
   <tr>
     <td class="tg-yzt1" width="15%">Use Case</td>
-    <th class="tg-yw4l">Alternative flow for 1 – Forgot Password Case</th>
+    <th class="tg-yw4l">Alternative Flow: Login:WrongLogin</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Id</td>
@@ -177,7 +178,7 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Brief Description</td>
-    <th class="tg-yw4l">The user has forgotten their password</th>
+    <th class="tg-yw4l">Android client informs user of wrong login details</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Primary Actors</td>
@@ -185,25 +186,25 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Secondary Actors</td>
-    <th class="tg-yw4l">System</th>
+    <th class="tg-yw4l">None</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Preconditions</td>
-    <th class="tg-yw4l">-</th>
+    <th class="tg-yw4l">1. User has selected log in option</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Main Flow</td>
-    <th class="tg-yw4l">1. If the user forgot their password, they will be redirected to the “Forgot Password” Page <br />
-                        2. The user needs to type in their username. <br />
-                        3. The password will then be changed. <br />
+    <th class="tg-yw4l">1. The alternative flow starts after step 4 of the main flow. <br />
+                        2. Android client displays a wrong login details message. <br />
+                        3. Android client returns to login screen. <br />
   </tr>
   <tr>
     <td class="tg-yzt1">PostCondition</td>
-    <th class="tg-yw4l"The password of the user has been changed.</th>
+    <th class="tg-yw4l">None</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Alternative Flows</td>
-    <th class="tg-yw4l">-</th>
+    <th class="tg-yw4l">None</th>
   </tr>
 </table>
 
@@ -213,7 +214,7 @@
 <table width="100%" class="tg">
   <tr>
     <td class="tg-yzt1" width="15%">Use Case</td>
-    <th class="tg-yw4l">Find Patient</th>
+    <th class="tg-yw4l">Register</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Id</td>
@@ -221,7 +222,7 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Brief Description</td>
-    <th class="tg-yw4l">The user wants to find a patient</th>
+    <th class="tg-yw4l">User can register on the Android client</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Primary Actors</td>
@@ -229,26 +230,30 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Secondary Actors</td>
-    <th class="tg-yw4l">System</th>
+    <th class="tg-yw4l">None</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Preconditions</td>
-    <th class="tg-yw4l">The user is logged in </th>
+    <th class="tg-yw4l">1. User must have the app installed</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Main Flow</td>
-    <th class="tg-yw4l">1. The user accesses the "Find/Create Patient" tab on the menu. <br />
-                        2. The user will be redirected to the "Find Patient" page. In the Patient Search, the user can type in the patient's name (let's say "John") or identifier. <br />
-                        3. A list with all the patients called "John" will be displayed. The user can access the data of the patient by clicking on the table row. <br />
-                        4. The user will be redirected to the patient page where they can access several information (the overview tab which presents data regarding the Patient Actions, Programs, Relationships, Allergies, Problem List; the visits page which presents information on the last patient's visits; the demographics tab which presents the patient's name as well as the address, the graph tab which shows a graph depending on the concepts chosen - for example: pulse; and the form entry tab which gives data on the registered encounters.) <br />
+    <th class="tg-yw4l">1. User selects app icon on the screen <br />
+                        2. Android client displays login screen <br />
+                        3. User chooses register option <br />
+                        4. Android client displays register page <br />
+                        5. User fills out missing information <br />
+                        6. User selects sign up option <br />
+                        7. Android client displays a successfully registered message <br />
+                        8. Android client returns to login screen <br />
    </tr>
   <tr>
     <td class="tg-yzt1">PostCondition</td>
-    <th class="tg-yw4l">-</th>
+    <th class="tg-yw4l">1. User successfully registered</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Alternative Flows</td>
-    <th class="tg-yw4l">-</th>
+    <th class="tg-yw4l">IncorrectDetails</th>
   </tr>
 </table>
 
@@ -257,7 +262,50 @@
 <table width="100%" class="tg">
   <tr>
     <td class="tg-yzt1" width="15%">Use Case</td>
-    <th class="tg-yw4l">Start Patient's Visit</th>
+    <th class="tg-yw4l">Alternative Flow: Register:IncorrectDetails</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">2.1</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">Android client informs user of incorrect details</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">None</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">1. User has selected sign up option</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The alternative flow starts after step 6 of the main flow <br />
+                        2. Android client displays an incorrect details message <br />
+                        3. Android client returns to register page <br />
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">None</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">None</th>
+  </tr>
+</table>
+
+<br />
+
+<table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">View Data</td>
+    <th class="tg-yw4l">Create New Patient</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Id</td>
@@ -265,7 +313,7 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Brief Description</td>
-    <th class="tg-yw4l">The user wants to start a patient's visit</th>
+    <th class="tg-yw4l">User can view their vital data</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Primary Actors</td>
@@ -277,24 +325,21 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Preconditions</td>
-    <th class="tg-yw4l">The user is logged in </th>
+    <th class="tg-yw4l">1. User must be loggin in</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Main Flow</td>
-    <th class="tg-yw4l">1. The user accesses the "Find/Create Patient" tab on the menu. <br />
-                        2. The user will be redirected to the "Find Patient" page. In the Patient Search, the user can type in the patient's name. <br /> 
-                        3. A list with all the patients having the inputed name will be displayed. The user can access the data of the patient by clicking on the table row. <br />
-                        4. The system will redirect the user to the Patient's Page. By clicking the "Start Visit" button, the user will be redirected to the a new page where they need to complete a form with visit details and ecounters. <br />
-                        5. In the Visit Details Tab the user needs to input the patient's name, visit type, start time and end time of the visit, the location and indication (concept name or id). <br /> 
-                        6. In the encounters'tab the user can add new encounters. 6. The user can then save the formed which will then be saved in the sever's database. <br />
+    <th class="tg-yw4l">1. Android client displays the home page <br />
+                        2. User selects one from the list <br />
+                        3. Android client displays a new page that contains information <br />
    </tr>
   <tr>
     <td class="tg-yzt1">PostCondition</td>
-    <th class="tg-yw4l">A new visit has been added to the patient's page and saved into the server's database.</th>
+    <th class="tg-yw4l">1. The information page is displayed</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Alternative Flows</td>
-    <th class="tg-yw4l">-</th>
+    <th class="tg-yw4l">None</th>
   </tr>
 </table>
 
@@ -303,7 +348,7 @@
 <table width="100%" class="tg">
   <tr>
     <td class="tg-yzt1" width="15%">Use Case</td>
-    <th class="tg-yw4l">Create New Patient</th>
+    <th class="tg-yw4l">Send Data</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Id</td>
@@ -311,7 +356,7 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Brief Description</td>
-    <th class="tg-yw4l">The user wants to create a new patient</th>
+    <th class="tg-yw4l"> User can update their vital information</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Primary Actors</td>
@@ -319,24 +364,30 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Secondary Actors</td>
-    <th class="tg-yw4l">System</th>
+    <th class="tg-yw4l">None</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Preconditions</td>
-    <th class="tg-yw4l">The user is logged in </th>
+    <th class="tg-yw4l">1. User must be logged in</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Main Flow</td>
-    <th class="tg-yw4l">1. The user has to access the Create/Find Patient Tab in the Home Menu. <br />
-                        2. In the Create Patient tab the user needs to introduce the data of the new patient. (person name, birthday/age, gender) 3. By clicking on the Create Patient Button, the user will be redirected on a new page where they have to input more patient's data such as id number, demographics and address. <br />
+    <th class="tg-yw4l">1. User selects Input option <br />
+                        2. Android client displays a list of vitals <br /> 
+                        3. User chooses the required one <br />
+                        4. Android client displays the input form <br />
+                        5. User fill in missing data <br />
+                        6. User chooses save option <br />
+                        7. Android client displays a successful message <br />
+                        8. Android client returns to home page <br />
    </tr>
   <tr>
     <td class="tg-yzt1">PostCondition</td>
-    <th class="tg-yw4l">A new patient has been created.</th>
+    <th class="tg-yw4l">1. Vital information is updated</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Alternative Flows</td>
-    <th class="tg-yw4l">-</th>
+    <th class="tg-yw4l">IncorrectData</th>
   </tr>
 </table>
 
@@ -345,7 +396,49 @@
 <table width="100%" class="tg">
   <tr>
     <td class="tg-yzt1" width="15%">Use Case</td>
-    <th class="tg-yw4l">Create a new Concept</th>
+    <th class="tg-yw4l">Alternative Flow: SendData:IncorrectData</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">4.1</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">Android client informs user of incorrect data entered</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">None</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">1. User has submitted data using input form</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. The alternative flow starts after step 6 of the main flow <br />
+                        2. The Android client displays an incorrect data message <br />
+                        3. The Android client returns to input form page<br />
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">None</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">None</th>
+  </tr>
+
+
+
+  <table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Data Synchronisation</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Id</td>
@@ -353,7 +446,7 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Brief Description</td>
-    <th class="tg-yw4l">    The user wants to create a new concept.</th>
+    <th class="tg-yw4l">User can synchronise their data from other apps with Android client</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Primary Actors</td>
@@ -361,33 +454,37 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Secondary Actors</td>
-    <th class="tg-yw4l">System</th>
+    <th class="tg-yw4l">None</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Preconditions</td>
-    <th class="tg-yw4l">The user is logged in</th>
+    <th class="tg-yw4l">1. User must be logged in <br />
+      2. User must have supported apps installed/th>
   </tr>
   <tr>
     <td class="tg-yzt1">Main Flow</td>
-    <th class="tg-yw4l">1. The user has to access the Create/Find Patient Tab in the Home Menu. <br />
-                        2. In the Create Patient tab the user needs to introduce the data of the new patient. (person name, birthday/age, gender) 3. By clicking on the Create Patient Button, the user will be redirected on a new page where they have to input more patient's data such as id number, demographics and address. <br />
+    <th class="tg-yw4l">1. User selects synchronise option <br />
+                        2. Android client displays a list of apps <br />
+                        3. User chooses one option <br />
+                        4. Android client displays a successful message <br />
+                        5. Android client returns to home page <br />
    </tr>
   <tr>
     <td class="tg-yzt1">PostCondition</td>
-    <th class="tg-yw4l">A new patient has been created.</th>
+    <th class="tg-yw4l">1. Android client synchronises with other apps</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Alternative Flows</td>
-    <th class="tg-yw4l">-</th>
+    <th class="tg-yw4l">None
+    </th>
   </tr>
-</table>
 
-<br />
+  <br />
 
-<table width="100%" class="tg">
+  <table width="100%" class="tg">
   <tr>
     <td class="tg-yzt1" width="15%">Use Case</td>
-    <th class="tg-yw4l">Find Concept</th>
+    <th class="tg-yw4l">Data Sharing</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Id</td>
@@ -395,7 +492,7 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Brief Description</td>
-    <th class="tg-yw4l"> The user wants to find a concept in the database.</th>
+    <th class="tg-yw4l">User can share data with health providers</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Primary Actors</td>
@@ -403,34 +500,36 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Secondary Actors</td>
-    <th class="tg-yw4l">System</th>
+    <th class="tg-yw4l">None</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Preconditions</td>
-    <th class="tg-yw4l">The user is logged in</th>
+    <th class="tg-yw4l">1. User must be logged in</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Main Flow</td>
-    <th class="tg-yw4l">1. The user has to access the Dictionary Tab in the Home Page. <br />
-                        2. The user will then write the name or the id of the concept in the "find concept" tab. <br />
-                        3. Information about the concept will be displayed.<br />
+    <th class="tg-yw4l">1. User selects share option <br />
+      2. Android client displays a list of health providers <br />
+      3. User ticks the desired health provider(s) <br />
+      4. User selects save option <br />
+      5. Android client displays a successful message <br />
+      6. Android client returns to the home page
    </tr>
   <tr>
     <td class="tg-yzt1">PostCondition</td>
-    <th class="tg-yw4l">Information about the concept will be displayed.</th>
+    <th class="tg-yw4l">1. Android client shares user’s vital data with health providers</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Alternative Flows</td>
-    <th class="tg-yw4l">1.Cancel Form Use Case <br />
-                        2. Delete Concept Use case</th>
+    <th class="tg-yw4l">None<br />
+    </th>
   </tr>
-
-
+  <br />
 
   <table width="100%" class="tg">
   <tr>
     <td class="tg-yzt1" width="15%">Use Case</td>
-    <th class="tg-yw4l">Capture Vitals</th>
+    <th class="tg-yw4l">Edit Profile</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Id</td>
@@ -438,7 +537,7 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Brief Description</td>
-    <th class="tg-yw4l"> The user wants to capture patient's vitals.</th>
+    <th class="tg-yw4l">User edit personal profile</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Primary Actors</td>
@@ -446,36 +545,41 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Secondary Actors</td>
-    <th class="tg-yw4l">System</th>
+    <th class="tg-yw4l">None</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Preconditions</td>
-    <th class="tg-yw4l">The user is logged in</th>
+    <th class="tg-yw4l">1. User must be logged in</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Main Flow</td>
-    <th class="tg-yw4l">1. The user selects the "capture vitals" option from the menu. <br />
-                        2. A list with all the patients will be displayed. <br />
-                        3. The user selects one of the patients.<br />
-                        4. The user will fill in a form with the patient's vitals. (height, weight, pulse, heart rate etc) <br />
-                        5. The user will select the save option to save the form. <br />
+    <th class="tg-yw4l">1. User selects edit profile option <br />
+
+2. Android client displays user’s profile page <br />
+
+3. User fills in what needs to be changed<br />
+
+4. User selects save option <br />
+
+5. Android client displays a successful message<br />
+
+6. Android client returns to home page<br />
    </tr>
   <tr>
     <td class="tg-yzt1">PostCondition</td>
-    <th class="tg-yw4l">The information will be stored in the server's database.</th>
+    <th class="tg-yw4l">1. User successfully edited person profile</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Alternative Flows</td>
-    <th class="tg-yw4l">1.Cancel Form Use Case 
+    <th class="tg-yw4l">None<br />
     </th>
   </tr>
-
   <br />
 
-  <table width="100%" class="tg">
+<table width="100%" class="tg">
   <tr>
     <td class="tg-yzt1" width="15%">Use Case</td>
-    <th class="tg-yw4l">Create an appointment</th>
+    <th class="tg-yw4l">Delete Account</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Id</td>
@@ -483,7 +587,7 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Brief Description</td>
-    <th class="tg-yw4l">The user wants to create a new appointment.</th>
+    <th class="tg-yw4l">User can delete account</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Primary Actors</td>
@@ -491,32 +595,80 @@
   </tr>
   <tr>
     <td class="tg-yzt1">Secondary Actors</td>
-    <th class="tg-yw4l">System</th>
+    <th class="tg-yw4l">None</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Preconditions</td>
-    <th class="tg-yw4l">The user is logged in</th>
+    <th class="tg-yw4l">1. User must be logged in</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Main Flow</td>
-    <th class="tg-yw4l">1. The user selects the "Appointements" option from the menu. <br />
-                        2. In the Existing Appointements tab the user will choose the "Schedule new appointment" option. <br />
-                        3. The user will be asked to choose between "Schedule New Appointment" and "Add Walk-In Appointment".<br />
-                        4. After choosing the "Schedule new Appointment" option, the user will be redirected to the "Create Appointment" page<br />
-                        5. The user will have to fill in a form with their details as well as appointment properties (location, provider, date), select a time and also enter any additional notes. <br />
-                        6. The user will then save the form. <br />
+    <th class="tg-yw4l">1. User selects delete account option <br />
+
+2. Android client displays a confirmation pop up<br />
+
+3. User selects confirm option<br />
+
+4. Android client displays log in screen<br />
    </tr>
   <tr>
     <td class="tg-yzt1">PostCondition</td>
-    <th class="tg-yw4l">A new appointment for the upatient has been created.</th>
+    <th class="tg-yw4l">1. User’s account has been deleted from the database</th>
   </tr>
   <tr>
     <td class="tg-yzt1">Alternative Flows</td>
-    <th class="tg-yw4l">Cancel Form Use Case <br />
+    <th class="tg-yw4l">None<br />
     </th>
   </tr>
   <br />
 
+
+<table width="100%" class="tg">
+  <tr>
+    <td class="tg-yzt1" width="15%">Use Case</td>
+    <th class="tg-yw4l">Data Visualisation</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Id</td>
+    <th class="tg-yw4l">9</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Brief Description</td>
+    <th class="tg-yw4l">User can display data under different forms</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Primary Actors</td>
+    <th class="tg-yw4l">User</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Secondary Actors</td>
+    <th class="tg-yw4l">None</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Preconditions</td>
+    <th class="tg-yw4l">1. User must be logged in</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Main Flow</td>
+    <th class="tg-yw4l">1. User selects delete data visualisaton option <br />
+
+2. Android client displays a list of available options <br />
+3. User chooses one option<br />
+ 4. Android client displays a successful message<br />
+  5. Android client returns to home page
+   </tr>
+  <tr>
+    <td class="tg-yzt1">PostCondition</td>
+    <th class="tg-yw4l">1. User has applied data visualisation preference</th>
+  </tr>
+  <tr>
+    <td class="tg-yzt1">Alternative Flows</td>
+    <th class="tg-yw4l">None<br />
+    </th>
+  </tr>
+  <br />
+
+<br />
 </table>
 
 
