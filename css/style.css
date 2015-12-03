@@ -20,12 +20,11 @@ table {
 	font-size: 12px;
 	line-height: 18px;
 	margin: 30px auto;
-	text-align: left;
 	width: 1200px;
 }	
 
 th {
-	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#003366,#001E3D);
 	border-left: 1px solid #555;
 	border-right: 1px solid #777;
 	border-top: 1px solid #555;
