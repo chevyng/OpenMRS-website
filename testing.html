@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tools page">
-    <meta name="author" content="Chevy Ng">
+    <meta name="description" content="Research Page">
 
+    <link rel="stylesheet" href="css/style.css">
     <title>OpenMRS-Diabetes</title>
 
     <!-- Bootstrap core CSS -->
@@ -82,10 +82,12 @@
                 <li><a href="requirement.html">Requirement</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="usecases.html">Use Cases</a></li>
+
+
               </ul>
             </li>
 			
-			<li><a href="#">Tools</a></li>
+			<li><a href="tools.html">Tools</a></li>
 			<li><a href="design.html">Design</a></li>
 			
               <li class="dropdown">
@@ -104,68 +106,40 @@
 
     <!-- Page Content -->
 
-  <div class="content-tools">
+    <div class="content-section-a-height">
 
-        <div class="container marketing">
+        <div class="container">
 
-            <div class="row">
-                <div class="col-lg">
-                    <h2 class="content-heading">Tools</h2>
-					<h2 class="text-muted">That made it possible for us</h2>
-                </div>
-				
-				<div class="col-lg-4">
-					<a href="https://github.com/" target="_blank" class="button alt">
-					<img class="image-tools" src="images/github.png" alt="">
-					</a>
-				</div>
-				
-				<div class="col-lg-4">
-					<a href="https://www.mysql.com/" target="_blank" class="button alt">
-					<img class="image-tools" src="images/mysql.png" alt="">
-					</a>
-				</div>
-				
-				<div class="col-lg-4">
-					<a href="https://spring.io/" target="_blank" class="button alt">
-					<img class="image-tools"src="images/spring.png" alt="">
-					</a>
-				</div>
-				
-				<div class="col-lg-4">
-				    <a href="http://developer.android.com/tools/studio/index.html" target="_blank" class="button alt" >
-					<img class="image-tools" src="images/android_studio.png" alt="">
-					</a>
-				</div>
-				
-				<div class="col-lg-4">
-					<a href="https://eclipse.org/" target="_blank" class="button alt">
-					<img class="image-tools" src="images/eclipse.png" alt="">
-					</a>
-				</div>
-				
-				<div class="col-lg-4">
-					<a href="http://hibernate.org/" target="_blank" class="button alt">
-					<img class="image-tools" src="images/hibernate.png" alt="">
-					</a>
-				</div>
-				
-				<div class="col-lg-4">
-					<a href="https://www.google.com/docs/about/" target="_blank" class="button alt">
-					<img class="image-tools" src="images/googledocs.png" alt="">
-					</a>
-				</div>
-				
-				<div class="col-lg-4">
-					<a href="http://openmrs.org/" target="_blank" class="button alt">
-					<img class="image-tools" src="images/openmrs.png" alt="">
-					</a>
-				</div>
-            </div>
+                    <h2 class="content-heading">Testing Strategy</h2>
 
-        </div>
-        <!-- /.container -->
+					<div class="col-lg">
+					<h2 class="testing-subheading">Unit Testing</h2>
+					 <hr class="section-spacer-line">
+					</div>
+					
+					<p class="paragraph-left">Unit testing will be carried out on our codes to ensure that each functions that we have implemented are operating properly before committing it to the repository</p>
+					<p class="paragraph-left">We are planning to use JUnit to test our Android client and OpenMRS modules that might be needed.</p>
 
+					
+					<div class="col-lg">
+					<h2 class="testing-subheading">Functional Testing</h2>
+					 <hr class="section-spacer-line">
+					</div>
+					
+					<p class="paragraph-left">Functional testing is a key part of development to ensure that the functional requirements that have been agreed with the client are being fulfilled. </p>
+					<p class="paragraph-left">We will conduct functional testing on both our Android client and OpenMRS server to test the features and functionalities of our system.  </p>
+					<p class="paragraph-left">We are planning to use Espresso by Android developers to conduct our functional UI testing on our Android client, and manual testing on our OpenMRS server functionalities. </p>
+					
+					<div class="col-lg">
+					<h2 class="testing-subheading">User Acceptance Testing</h2>
+					 <hr class="section-spacer-line">
+					</div>
+					
+					<p class="paragraph-left">We will be conducting our User Acceptance Testing on a weekly / biweekly basis with our clients to ensure that our clients are satisfied with our project development.</p>
+					 
+		</div>
+					 
+					                    
     </div>
 
 
@@ -178,18 +152,7 @@
                         <li>
                             <a href="#">Home</a>
                         </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+
 						
 						<li class="pull-right">
 							<a href="#">Back to top</a>
@@ -198,15 +161,13 @@
 					
 					<ul class="list-inline">
 						<li class="copyright text-muted small">Copyright &copy; System Engineering Project Team 13</li>
-						<li class="copyright text-muted small pull-right">Template by Bootstrap</li>
 					</ul>
                 </div>
             </div>
         </div>
     </footer>
-
-
-    <!-- jQuery -->
+	
+     <!-- jQuery -->
     <script src="assets/js/jquery.js"></script>
 
     <!-- Bootstrap core JavaScript
@@ -222,3 +183,4 @@
 </body>
 
 </html>
+
