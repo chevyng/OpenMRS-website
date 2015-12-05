@@ -30,6 +30,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+	<link href="css/tablestyle.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
 	<link href="css/navbar-fixed-top.css" rel="stylesheet">
 	<link href="css/landing-page.css" rel="stylesheet">
@@ -116,29 +117,246 @@
                 <div class="col-lg-10 col-sm-6 col-lg-offset-1">
                     <div class="clearfix"></div>
                     <h2 class="section-heading"><font color="#15317E">Steps to deployment</font></h2>
-                      <h2 class="section-subheading">Web Platform</h2>
+                      <h2 class="section-subheading" align="left">Web Platform</h2>
 
-                      <img src="images/openmrslogo.png" alt="" align="left">
+                      <img src="images/openmrslogo.png" alt="" align="left" style="padding-right:30px">
 
-            <p class="paragraph" align="left"  style="Times New Roman;"> OpenMRS is a collaborative open source project to develop software to support the delivery of health care in developing countries. <br /> This section will get you started installing and configuring OpenMRS from start to finish. These instructions are for manually installing OpenMRS. </p>
+            <p class="paragraph" align="left"> This section will get you started installing and configuring OpenMRS from start to finish. These instructions are for manually installing OpenMRS. </p>
 
-            <h2 class="section-subheading" align="left">System Requirements</h2>
-            <p class="paragraph" align="left"  style="Times New Roman;"> The hardware required depends on the size of your implementation. For small implementations, OpenMRS can be run on just about any desktop or laptop. <br />  <u> Minimum Requirements - 100s of patients </u> <br /> 1 GHz processor or better, 256 MB of memory or more, 40 GB hard drive or larger. You can set up the server on a laptop for demonstration or testing purposes. <br /> <u> Minimum Requirements - 10,000 patients </u> < br/> 1.5+ GHz, 2 GB of memory, and 150+ GB of disk space with RAID  and appropriate backup facilities. <br /> <u> Minimum Requirements - 250,000 patients </u> <br /> AMPATH is supporting an OpenMRS instance with over 250,000 patients with two 2.26 GHz quad processors, 16 GB of memory, and 500 GB of disk space with RAID and appropriate backup facilities.</p>
-
-            <h2 class="section-subheading" align="left">Install Java</h2>
-             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Download the latest stable release of the Java Runtime Environment (JRE). For the standalone version you will only need the Java Runtime Environment (JRE) not Java Development Kit (JDK). Minimum version required is Java 6 although it is recommended to install Java 7</p>
-
-             <h2 class="section-subheading" align="left">Install Tomcat</h2>
-             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Download Tomcat 6.0.29. You can use the exe version, which installs Tomcat as a service or the zip archive. <br /> <u> Step 2 </u> Execute the file and install running the default settings. <br /> <u> Step 3 </u> Accept default destination folder <br /> <u> Step 4 </u> Accept HTTP/1.1 Connector Port 8080. <br /> <u> Step 5 </u> Set Administrator login (username/password). <br /><u> Step 6 </u>Accept the Java directory detected. <br /> <u> Step 7 </u> Select Install Tomcat. <br /> <u> Step 8 </u>After installation is complete you will need to change users roles by following this directory on your windows explorer: C:\Program Files\Apache Software Foundation\Tomcat 6.0\conf. <br /> <u> Step 9 </u> Open the Tomcat users file (e.g. C:\Program Files\Apache Software Foundation\Tomcat 6.0\conf\tomcat-users.xml) in a text editor. <br /> <u> Step 10 </u> Create a new user called admin with the roles admin, manager and manager-gui. This file should be protected so you will need to open it as Administrator (right-click on your text editor and select "Run as administrator") user name="admin" password="XXXXXX" roles="tomcat,admin,manager,manager-gui"/  </p>
-
-             <h2 class="section-subheading" align="left">Install MySQL</h2>
-             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Download the latest MySQL installer. <br /> <u> Step 2 </u> Run the install program (.msi). <br /> <u> Step 3 </u> Accept the license agreement. <br /> <u> Step 4 </u> Under Feature Selection select Full Installation Setup and select the right Architecture for your computer (32-bit / 64-bit). <br /> <u> Step 5 </u> Click next and you will be shown a list of applications that you need in order to meet the requirements for installing all services. Make sure you satisfy all the requirements, if not, please install the missing applications on your machine. <br /><u> Step 6 </u>On the next configuration options select “Developer Machine”. <br /> <u> Step 7 </u> Leave all other settings to default. <br /> <u> Step 8 </u>Enter a username and password. Note: These will be the credentials for the user with root privileges. Do Not Forget the Password. <br /> <u> Step 9 </u> Click next and finish the installation. </p>
-
-             <h2 class="section-subheading" align="left">Deploy OpenMRS</h2>
-             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Ensure that Tomcat is started. <br /> <u> Step 2 </u> Download the latest stable release of OpenMRS. <br /> <u> Step 3 </u> Navigate to http://localhost:8080/manager/html and enter your Tomcat administrator credentials (username and password chosen when installing Tomcat). <br /> <u> Step 4 </u> In the Tomcat Web Application Manager, enter the location of the downloaded openmrs.war fileto deploy. <br /> <u> Step 5 </u> At the end of this process, the web page will refresh and /openmrs should be displayed under Applications. Apache Tomcat should also start the application (Running = True; and in Commands, Stop is underlined). </p>
-
-             <h2 class="section-subheading" align="left">Start using OpenMRS</h2>
-             <p class="paragraph" align="left"  style="Times New Roman;"> <u> Step 1 </u> Ensure that Tomcat is started.After you have finished configuring OpenMRS, RELOAD the application in Tomcat Manager. <br /> <u> Step 2 </u>Open http://localhost:8080/openmrs. You will see a login page. If you're using the OpenMRS standalone package, the page is at http://localhost:8080/openmrs-standalone. </p>
+			<hr class="section-spacer-line">
+            <h2 class="section-subheading" align="left" style="padding-top:50px">System Requirements</h2>
+			<table style="text-align:left">
+                    <thead>
+                        <tr>
+                            <th>Target Patients</th>
+                            <th>Minimum Requirements</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>100s of patients</td>
+                            <td>1 GHz processor or better, 256 MB of memory or more, 40 GB hard drive or larger. You can set up the server on a laptop for demonstration or testing purposes. </td>
+                        </tr>
+						
+						<tr>
+                            <td>10,000 patients</td>
+                            <td>1.5+ GHz, 2 GB of memory, and 150+ GB of disk space with RAID  and appropriate backup facilities.</td>
+                        </tr>
+						
+						<tr>
+                            <td>250,000 patients</td>
+                            <td>AMPATH is supporting an OpenMRS instance with over 250,000 patients with two 2.26 GHz quad processors, 16 GB of memory, and 500 GB of disk space with RAID and appropriate backup facilities.</td>
+                        </tr>
+					</tbody>
+			</table>
+			<p> <a href="#" class="btn btn-default btn-lg"><i></i><span class="network-name">Back to top<span></a> </p>	
+			<hr class="section-spacer-line">
+            
+			<h2 class="section-subheading" align="left">Install Java</h2>
+			 <table style="text-align:left">
+                    <thead>
+                        <tr>
+                            <th>Step</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Download the latest stable release of the Java Runtime Environment (JRE). For the standalone version you will only need the Java Runtime Environment (JRE) not Java Development Kit (JDK). Minimum version required is Java 6 although it is recommended to install Java 7</td>
+                        </tr>
+					</tbody>
+			</table>
+			 <p> <a href="#" class="btn btn-default btn-lg"><i></i><span class="network-name">Back to top<span></a> </p>
+			 <hr class="section-spacer-line">
+             
+			 <h2 class="section-subheading" align="left">Install Tomcat</h2>
+			 <table style="text-align:left">
+                    <thead>
+                        <tr>
+                            <th>Step</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Download Tomcat 6.0.29. You can use the exe version, which installs Tomcat as a service or the zip archive.</td>
+                        </tr>
+						
+			             <tr>
+                            <td>2</td>
+                            <td>Execute the file and install running the default settings.</td>
+                        </tr>
+						
+				        <tr>
+                            <td>3</td>
+                            <td>Accept default destination folder</td>
+                        </tr>
+						
+						<tr>
+                            <td>4</td>
+                            <td>Accept HTTP/1.1 Connector Port 8080.</td>
+                        </tr>
+						
+						<tr>
+                            <td>5</td>
+                            <td>Set Administrator login (username/password).</td>
+                        </tr>
+						
+						<tr>
+                            <td>6</td>
+                            <td>Accept the Java directory detected.</td>
+                        </tr>
+						
+						<tr>
+                            <td>7</td>
+                            <td>Select Install Tomcat.</td>
+                        </tr>
+						
+						<tr>
+                            <td>8</td>
+                            <td>After installation is complete you will need to change users roles by following this directory on your windows explorer: C:\Program Files\Apache Software Foundation\Tomcat 6.0\conf.</td>
+                        </tr>
+						
+						<tr>
+                            <td>9</td>
+                            <td>Open the Tomcat users file (e.g. C:\Program Files\Apache Software Foundation\Tomcat 6.0\conf\tomcat-users.xml) in a text editor.</td>
+                        </tr>
+						
+						<tr>
+                            <td>10</td>
+                            <td>Create a new user called admin with the roles admin, manager and manager-gui. This file should be protected so you will need to open it as Administrator (right-click on your text editor and select "Run as administrator") user name="admin" password="XXXXXX" roles="tomcat,admin,manager,manager-gui"/</td>
+                        </tr>
+						
+					</tbody>
+			</table>
+             <p> <a href="#" class="btn btn-default btn-lg"><i></i><span class="network-name">Back to top<span></a> </p>
+			 <hr class="section-spacer-line">
+            
+			<h2 class="section-subheading" align="left">Install MySQL</h2>
+			 			 <table style="text-align:left">
+                    <thead>
+                        <tr>
+                            <th>Step</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Download the latest MySQL installer.</td>
+                        </tr>
+						
+			             <tr>
+                            <td>2</td>
+                            <td>Run the install program (.msi).</td>
+                        </tr>
+						
+				        <tr>
+                            <td>3</td>
+                            <td>Accept the license agreement.</td>
+                        </tr>
+						
+						<tr>
+                            <td>4</td>
+                            <td>Under Feature Selection select Full Installation Setup and select the right Architecture for your computer (32-bit / 64-bit).</td>
+                        </tr>
+						
+						<tr>
+                            <td>5</td>
+                            <td>Click next and you will be shown a list of applications that you need in order to meet the requirements for installing all services. Make sure you satisfy all the requirements, if not, please install the missing applications on your machine.</td>
+                        </tr>
+						
+						<tr>
+                            <td>6</td>
+                            <td>On the next configuration options select “Developer Machine”.</td>
+                        </tr>
+						
+						<tr>
+                            <td>7</td>
+                            <td>Leave all other settings to default.</td>
+                        </tr>
+						
+						<tr>
+                            <td>8</td>
+                            <td>Enter a username and password. Note: These will be the credentials for the user with root privileges. Do Not Forget the Password. </td>
+                        </tr>
+						
+						<tr>
+                            <td>9</td>
+                            <td>Click next and finish the installation.</td>
+                        </tr>
+						
+					</tbody>
+			</table>
+			 <p> <a href="#" class="btn btn-default btn-lg"><i></i><span class="network-name">Back to top<span></a> </p>
+			 <hr class="section-spacer-line">
+             
+			 <h2 class="section-subheading" align="left">Deploy OpenMRS</h2>
+			 			 <table style="text-align:left">
+                    <thead>
+                        <tr>
+                            <th>Step</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ensure that Tomcat is started.</td>
+                        </tr>
+						
+			             <tr>
+                            <td>2</td>
+                            <td>Download the latest stable release of OpenMRS.</td>
+                        </tr>
+						
+				        <tr>
+                            <td>3</td>
+                            <td>Navigate to http://localhost:8080/manager/html and enter your Tomcat administrator credentials (username and password chosen when installing Tomcat).</td>
+                        </tr>
+						
+						<tr>
+                            <td>4</td>
+                            <td>In the Tomcat Web Application Manager, enter the location of the downloaded openmrs.war fileto deploy.</td>
+                        </tr>
+						
+						<tr>
+                            <td>5</td>
+                            <td>At the end of this process, the web page will refresh and /openmrs should be displayed under Applications. Apache Tomcat should also start the application (Running = True; and in Commands, Stop is underlined).</td>
+                        </tr>
+					
+						
+					</tbody>
+			</table>
+			 <p> <a href="#" class="btn btn-default btn-lg"><i></i><span class="network-name">Back to top<span></a> </p>
+			 <hr class="section-spacer-line">
+             
+			 <h2 class="section-subheading" align="left">Start using OpenMRS</h2>
+			 			 <table style="text-align:left">
+                    <thead>
+                        <tr>
+                            <th>Step</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ensure that Tomcat is started.After you have finished configuring OpenMRS, RELOAD the application in Tomcat Manager.</td>
+                        </tr>
+						
+			             <tr>
+                            <td>2</td>
+                            <td>Open http://localhost:8080/openmrs. You will see a login page. If you're using the OpenMRS standalone package, the page is at http://localhost:8080/openmrs-standalone.</td>
+                        </tr>
+						
+						
+					</tbody>
+			</table>
+			 <p> <a href="#" class="btn btn-default btn-lg"><i></i><span class="network-name">Back to top<span></a> </p>
+			 
           </div>
         </div>
       </div>

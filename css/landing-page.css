@@ -331,4 +331,12 @@ a.linkjump{
   top: -45px;
   visibility: hidden; 
  }
+ 
+ a.usecase-linkjump{
+  padding-top: 30px;
+  display: block;
+  position: relative;
+  top: -45px;
+  visibility: hidden; 
+ }
 
