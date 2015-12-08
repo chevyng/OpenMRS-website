@@ -25,6 +25,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+	<link href="css/tablestyle.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
 	<link href="css/navbar-fixed-top.css" rel="stylesheet">
 	<link href="css/landing-page.css" rel="stylesheet">
@@ -104,14 +105,38 @@
     <div class="content-section-a-height">
 
         <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-sm-6 col-lg-offset-1">
 
                     <h2 class="content-heading">Research</h2>
 					<h2 class="section-subheading" align="left">Mobile Applications</h2>
-                     <p align="left" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The fitness/health devices are being built to interface with Tracking platforms such as Google Fit, Apple Healthkit and Microsoft Health. Typical is Google’s Android-based health-tracking platform, a single set of APIs that blends data from multiple apps and devices. Google Fit uses sensors in a user's mobile device or activity tracker to record physical fitness activities (such as walking or cycling), which are measured against the user's fitness goals to provide a comprehensive view of their fitness. Partners include Nike, HTC, LG, Withings, Motorola, Noom, Runtastic, RunKeeper and Polar. Important for us, users will be able to choose whom their fitness data is shared with and also delete this information at any time.<br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All of this data is interesting, but users are unsure of how to make use of it. Technology companies are providing the answer by developing health platforms that aggregate data from multiple devices. This provides a more complete picture of a user's health habits enabling him/her to make meaningful lifestyle improvements. The two major players developing aggregator apps are Google Fit and Apple's HealthKit. </p>
-                    <table>
+					<hr class="section-spacer-line">
+                     <p class="paragraph-description" >	With more and more fitness and health devices being available on the market today, big technology companies such as Google, Apple and Samsung are building health platform apps that are able to aggregate data from these devices.
+														The reason for building these health platform apps are to provide users a way to store these datas into a single app, which enables them to have a complete picture of their health and fitness habit. </p>
+														
+					<p class="paragraph-description" >	An example of how such platform works will be Google's Android-based, GoogleFit. GoogleFit allows different apps and devices such as RunKeeper and MyFitnessPal to directly sync its data into GoogleFit using a single set of APIs.
+														GoogleFit also uses sensors in the user's mobile device to record physical fitness activities, such as walking or cycling, which are then measured against the user's fitness goals to provide a comprehensive view of their fitness. </p>
+
+														
+					<p class="paragraph-description" > A more detailed research have been conducted among several other apps and is shown below in the table</p>
+					<!-- <p class="paragraph-description" > Fitness and health devices are now built to interface with Health tracking platforms such as GoogleFit, Apple's HealthKit and Microsoft Health. 
+														Typical is Google’s Android-based health-tracking platform, GoogleFit, that allows different apps and devices to sync their data using a single set of APIs. 
+														GoogleFit also uses sensors in the user's mobile device or activity tracker to record physical fitness activities (such as walking or cycling), which are measured against the user's fitness goals to provide a comprehensive view of their fitness. 
+														Partners include Nike, HTC, LG, Withings, Motorola, Noom, Runtastic, RunKeeper and Polar. Important for us, users will be able to choose whom their fitness data is shared with and also delete this information at any time.<br /> 
+														
+                    <p class="paragraph-description" > All of this data is interesting, but users are unsure of how to make use of it. 
+													   Technology companies are providing the answer by developing health platforms that aggregate data from multiple devices. 
+													   This provides a more complete picture of a user's health habits enabling him/her to make meaningful lifestyle improvements. 
+													   The two major players developing aggregator apps are Google Fit and Apple's HealthKit. </p> -->
+													   
+													   
+			
+				
+				
+				<table width="100%">
                     <thead>
                         <tr>
-                            <th>HealthKit</th>
+                            <th >HealthKit</th>
                             <th>GoogleFit</th>
                             <th>Samsung S health</th>
                             <th>Nudge</th>
@@ -120,21 +145,61 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td ><img src="images/healthkit.png" alt="" style="width:100px;height:80px;" align="middle"> <br /> <p  align="left"> &nbsp; &nbsp; &nbsp; There has been a great deal of interest in Apple's new Health app (comes installed on the iPhone 6) and HealthKit, their software platform for storage and aggregation of a user's health data, allowing all of it to be stored in one secure place. The Health app can accept data from other apps and users' input, organizing and displaying it in an easy-to-read dashboard format. Some popular apps that work with HealthKit include Jawbone UP, MyFitnessPal and Run with Map My Run+. There have been problems with the release of HealthKit and iOS8, but they appear to have been corrected and there are numerous HealthKitenabled apps now available for users. </p> </td>
-                            <td><img src="images/googlefit.png" alt="" style="width:80px;height:80px;" align="middle"> <br /> <p  align="left">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Google also recently announced their Android application, Google Fit, as heir digital platform for tracking and aggregating data from wearable devices. Google Fit will provide a set of common application programming interfaces (APls) that will allow developers to create software that will incorporate data from various devices, including smartphones. Users can also input their own data enabling Google Fit to display a more complete view of their health activities. Another feature of the APls enables developers to tap into data and use it to recommend health tips for the user. Apps already using GoogleFit include Noom and Nike Fuel, and additional partners include Adidas, Polar, RunKeeper and WiThings. </p> </td>
-                             <td><img src="images/shealth.png" alt="" style="width:80px;height:80px;" align="middle"> <br /> <p  align="left"> &nbsp; &nbsp; &nbsp; Samsung S Health is described as a personal wellness application that collects and analyzes health data to assist users in maintaining a healthier lifestyle. Health is an integrated platform preloaded on the Galaxy S5 smartphone that enables nutrition, fitness and wellness tracking. Features include a built-in heart rate monitor on the smartphone, a step counter for walking, and an exercise monitor for running, cycling, and hiking. The application is compatible with a number of third-party healthcare sensors such as blood glucose meters, blood pressure monitors and body composition scales. The collected data can be displayed in graphs and tables to provide a picture of the user's health in an easily understandable format. The latest update to the S Health app allows users to track stress levels  using the heart rate sensor on the Galaxy S5. However, there is some question as to what is actually being measured to indicate stress levels and the company has not officially provided more details. Samsung S is the first health app to receive clearance from the FDA and they have announced a multi-year partnership Cigna. </p> </td>
-                              <td><img src="images/nudge.png" alt="" style="width:80px;height:80px;" align="middle"> <br /> <p  align="left"> &nbsp; &nbsp; &nbsp; Nudge is a standalone aggregator to help users manage different health tracking devices and wearables. Nudge currently syncs with MapMyFitness, Moves, Runkeeper, Strava, Fitbit, Jawbone UP, and Sleep. It also allows users to manually input other related data such as the amount of water they drink, food intake, their active hours and number of hours asleep. The app then provides the user with a visual snapshot of their overall health. Nudge is available for both iOS and Android devices.  </p> </td>
-                               <td><img src="images/healthytarget.png" alt="" style="width:80px;height:80px;" align="middle"> <br /> <p  align="left"> &nbsp; &nbsp; &nbsp; Healthy Target from WebMD, allows users to manually input biometric data or upload it from a variety of devices, including Fitbit, Jawbone UP, Withings and iPhones. Healthy Target offers a slightly different service as it draws from the medical information on their website to provide personally designed insights for the user. The user may select goals such as losing weight, eating healthier, or controlling blood sugar. Then depending on the fitness data provided by the user, Healthy Target may recommend lifestyle changes to help the user reach their goals. </p> </td>
+                            <td width="20%" align="center"><img src="images/healthkit.png" alt="" style="width:100px;height:80px;"> <br />  </td>
+                            <td width="20%" align="center"><img src="images/googlefit.png" alt="" style="width:80px;height:80px;"> <br /> </td>
+                            <td width="20%" align="center"><img src="images/shealth.png" alt="" style="width:80px;height:80px;"> <br />  </td>
+                            <td width="20%" align="center"><img src="images/nudge.png" alt="" style="width:80px;height:80px;"> <br /> </td>
+                            <td width="20%" align="center"><img src="images/healthytarget.png" alt="" style="width:80px;height:80px;"></td>
                         </tr>
-                          </tbody>
-                    </table>
+						
+						<tr>
+                            <td width="20%" style="vertical-align: top; text-align: left;"> <p > There has been a great deal of interest in Apple's new Health app (comes installed on the iPhone 6) and HealthKit, their software platform for storage and aggregation of a user's health data, allowing all of it to be stored in one secure place. The Health app can accept data from other apps and users' input, organizing and displaying it in an easy-to-read dashboard format. Some popular apps that work with HealthKit include Jawbone UP, MyFitnessPal and Run with Map My Run+. There have been problems with the release of HealthKit and iOS8, but they appear to have been corrected and there are numerous HealthKitenabled apps now available for users. </p> </td>
+                            <td width="20%" style="vertical-align: top; text-align: left;"> <p> Google also recently announced their Android application, Google Fit, as heir digital platform for tracking and aggregating data from wearable devices. Google Fit will provide a set of common application programming interfaces (APls) that will allow developers to create software that will incorporate data from various devices, including smartphones. Users can also input their own data enabling Google Fit to display a more complete view of their health activities. Another feature of the APls enables developers to tap into data and use it to recommend health tips for the user. Apps already using GoogleFit include Noom and Nike Fuel, and additional partners include Adidas, Polar, RunKeeper and WiThings. </p> </td>
+                            <td width="20%" style="vertical-align: top; text-align: left;"> <p> Samsung S Health is described as a personal wellness application that collects and analyzes health data to assist users in maintaining a healthier lifestyle. Health is an integrated platform preloaded on the Galaxy S5 smartphone that enables nutrition, fitness and wellness tracking. Features include a built-in heart rate monitor on the smartphone, a step counter for walking, and an exercise monitor for running, cycling, and hiking. The application is compatible with a number of third-party healthcare sensors such as blood glucose meters, blood pressure monitors and body composition scales. The collected data can be displayed in graphs and tables to provide a picture of the user's health in an easily understandable format. The latest update to the S Health app allows users to track stress levels  using the heart rate sensor on the Galaxy S5. However, there is some question as to what is actually being measured to indicate stress levels and the company has not officially provided more details. Samsung S is the first health app to receive clearance from the FDA and they have announced a multi-year partnership Cigna. </p> </td>
+                            <td width="20%" style="vertical-align: top; text-align: left;"> <p> Nudge is a standalone aggregator to help users manage different health tracking devices and wearables. Nudge currently syncs with MapMyFitness, Moves, Runkeeper, Strava, Fitbit, Jawbone UP, and Sleep. It also allows users to manually input other related data such as the amount of water they drink, food intake, their active hours and number of hours asleep. The app then provides the user with a visual snapshot of their overall health. Nudge is available for both iOS and Android devices.  </p> </td>
+                            <td width="20%" style="vertical-align: top; text-align: left;"> <p> Healthy Target from WebMD, allows users to manually input biometric data or upload it from a variety of devices, including Fitbit, Jawbone UP, Withings and iPhones. Healthy Target offers a slightly different service as it draws from the medical information on their website to provide personally designed insights for the user. The user may select goals such as losing weight, eating healthier, or controlling blood sugar. Then depending on the fitness data provided by the user, Healthy Target may recommend lifestyle changes to help the user reach their goals. </p> </td>
+                        </tr>
+                    </tbody>                   
                 </table>
+				
+				<hr class="section-spacer-line">
+				<h2 class="section-subheading" align="left">Our Opinion</h2>
+		        <p class="paragraph-description"> Since the major leaders of health aggregation apps are GoogleFit and HealthKit, our task was to choose between both to see which one was better for collecting the data we need. 
+												  There are some significant differences between GoogleFit and Apple HealthKit, which are the data they collect, and how its collected.</p>
+												  
+				<p class="paragraph-description"> Both GoogleFit and HealthKit covers the amount of steps taken and distanced covered automatically.
+												  However GoogleFit has an advantage over HealthKit in that it also tracks the amount of calories expended by the user while HealthKit doesn't. GoogleFit also automatically logs user's running and cycling data. </p>
+												  
+				<p class="paragraph-description"> HealthKit on the other hand, allows users to input a wide variety of health data ranging from nutrition, reproductive health, to vitals.
+												  HealthKit data visualisation is also much nicer and neater with graph being shown.
+												  However, Apple, as usual, is a little strict with the way how these health data are shared between different app. </p>
+												  
+			<!--	<p class="paragraph-description"> GoogleFit is the easiest to start with as it's the most basic: it tracks your activity, weight and calories over time. 
+												  Three activities are logged automatically (walking, running and cycling). <br/>
+												  Other activities such as swimming or even snowboarding can be added manually. <br/>
+												  Heart rate and weight data points must also be entered manually or synchronised with wearables. 
+												  The data is presented in a clean and clear format; daily goals are supported, but you can only specify a certain amount of steps or a certain activity time to hit each day. 
+												  There is no way of tracking your sleep and no smart coaching to give you advice on how to change your goals or habits. </p>
+												  
+				<p class="paragraph-description"> On the other hand, HealthKit can keep track of several other data such as sleep tracking, distance and elevation, body measurements, calories burned and  blood glucose levels. 
+													Google Fit is able to take data from a range of third-party fitness trackers and the list of partners continues to grow. 
+													Apple, as usual, is a little stricter with the way data is handled. 
+													HealthKit allows users to see the information that is collected from other apps as well as the user's input. 
+													This information can be shared with medical researchers, but it cannot be shared with advertisers. </p> -->
+                
+				
+				<hr class="section-spacer-line">			   
+				<h2 class="section-subheading" align="left">Our Conclusion</h2>
+				<p class="paragraph-description"> Although Apple's HealthKit allows users to view a wide variety of health data, most of the health data have to be manually input by the user. </p>
+				<p class="paragraph-description"> However, as our aim for this project is to collect health and fitness data that could be input automatically from a range of fitness device, Apple platform might not be the friendlies among some Android Wear devices and app. </p>
+				<p class="paragraph-description"> After much consideration, we decided to go for Android's GoogleFit because there were more devices that were more Android friendly instead of Apple.  </p>
+				
 
-                <p align="left">Which one is better?</p>
-                <p align="left"><br /> Since the major leaders are GoogleFit and HealthKit our task was to choose which one is better for collecting the data we need. There are significant differences between Google Fit and Apple Health, both in terms of what's covered and how. GoogleFit is the easiest to start with as it's the most basic: it tracks your activity, weight and heart rate over time. Three activities are logged automatically (walking, running and cycling). Others as swimming to snowboarding can be added manually. Heart rate and weight data points must also be entered manually or synchronised with wearables. The data is presented in a clean and clear format; daily goals are supported, but you can only specify a certain amount of steps or a certain activity time to hit each day. There is no way of tracking your sleep and no smart coaching to give you advice on how to change your goals or habits. <br /> On the other hand, HealthKit can keep track of several other data such as sleep tracking, distance and elevation, body measurements, calories burned and  blood glucose levels. Google Fit is able to take data from a range of third-party fitness trackers and the list of partners continues to grow. Apple, as usual, is a little stricter with the way data is handled. Health allows users to see the information that is collected from other apps as well as the user's input. This information can be shared with medical researchers, but it cannot be shared with advertisers. </p>
-                <p align="left"> Our Conclusion </p> <p align="left"> It is nice Apple includes such an extensive way of viewing health data, but Apple's HealthKit will not work with Android Wear devices, which might be a drawback. Since Google supports many more devices with Google Fit and our challenge is to collect data from a wide range of devices, GoogleFit seemed the best choise for us.</p>
+				</div>
+             </div>    
+        </div>
+        <!-- /.container -->
 
-		</div>
     </div>
 
 	    <!-- Footer -->

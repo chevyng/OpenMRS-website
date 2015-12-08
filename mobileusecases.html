@@ -103,7 +103,9 @@
     <div class="content-section-a-height">
 
         <div class="container">
-
+		     <div class="row">
+                <div class="col-lg-10 col-sm-6 col-lg-offset-1">
+				
                     <h2 class="content-heading">Android Client Use Cases</h2>
                  
 					<style type="text/css">
@@ -115,7 +117,65 @@
 					.tg .tg-yzt1{background-color:#efefef;vertical-align:top}
 					.tg .tg-yw4l{vertical-align:top}
 					</style>
-
+					
+					<table width="50%" class="tg" align="center">
+                        <tr>
+                            <th class="tg-yzt1" width="15%"><b>ID</b></th>
+                            <th class="tg-yzt1"><b>Requirements</b></th>
+                        </tr>						
+						<tr>
+                            <th class="tg-yw4l"> 1 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-1"> Login </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 1.1 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-1.1"> Alternative Flow: Login:WrongLogin </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 2 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-2"> Register </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 2.1 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-2.1"> Alternative Flow: Register:IncorrectDetails </a></th>
+                        </tr>						
+						<tr>
+                            <th class="tg-yw4l"> 3 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-3"> Start Patient's Visit </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 4 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-4"> Send Data </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 4.1 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-4.1"> Alternative Flow: SendData:IncorrectData </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 5 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-5"> Data Synchronisation </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 6 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-6"> Data Sharing </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 7 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-7"> Edit Profile </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 8 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-8"> Delete Account </a></th>
+                        </tr>
+						<tr>
+                            <th class="tg-yw4l"> 2 </th>
+                            <th class="tg-yw4l"><a href="#mobile-usecase-9"> Data Visualisation</a></th>
+                        </tr>
+						
+					</table>
+					
+					<p><a class="usecase-linkjump" id="mobile-usecase-1"></a></p>
+					
 					<table  width="100%" class="tg">
 					  <tr>
 						<td class="tg-yzt1"  width="15%">Use Case</td>
@@ -159,7 +219,7 @@
 					  </tr>
 					</table>
 
-					<p><a class="usecase-linkjump" id="mobile-usecase-1-1"></a></p>
+					<p><a class="usecase-linkjump" id="mobile-usecase-1.1"></a></p>
 
 
 					<table width="100%" class="tg">
@@ -252,7 +312,7 @@
 					  </tr>
 					</table>
 
-					<p><a class="usecase-linkjump" id="mobile-usecase-2-1"></a></p>
+					<p><a class="usecase-linkjump" id="mobile-usecase-2.1"></a></p>
 
 					<table width="100%" class="tg">
 					  <tr>
@@ -386,7 +446,7 @@
 					  </tr>
 					</table>
 
-					<p><a class="usecase-linkjump" id="mobile-usecase-4-1"></a></p>
+					<p><a class="usecase-linkjump" id="mobile-usecase-4.1"></a></p>
 
 					<table width="100%" class="tg">
 					  <tr>
@@ -506,11 +566,11 @@
 					  <tr>
 						<td class="tg-yzt1">Main Flow</td>
 						<th class="tg-yw4l">1. User selects share option <br />
-						  2. Android client displays a list of health providers <br />
-						  3. User ticks the desired health provider(s) <br />
-						  4. User selects save option <br />
-						  5. Android client displays a successful message <br />
-						  6. Android client returns to the home page
+											2. Android client displays a list of health providers <br />
+											3. User ticks the desired health provider(s) <br />
+											4. User selects save option <br />
+											5. Android client displays a successful message <br />
+											6. Android client returns to the home page
 					   </tr>
 					  <tr>
 						<td class="tg-yzt1">PostCondition</td>
@@ -553,16 +613,11 @@
 					  <tr>
 						<td class="tg-yzt1">Main Flow</td>
 						<th class="tg-yw4l">1. User selects edit profile option <br />
-
-					2. Android client displays user’s profile page <br />
-
-					3. User fills in what needs to be changed<br />
-
-					4. User selects save option <br />
-
-					5. Android client displays a successful message<br />
-
-					6. Android client returns to home page<br />
+											2. Android client displays user’s profile page <br />
+											3. User fills in what needs to be changed<br />
+											4. User selects save option <br />
+											5. Android client displays a successful message<br />
+											6. Android client returns to home page<br />
 					   </tr>
 					  <tr>
 						<td class="tg-yzt1">PostCondition</td>
@@ -605,12 +660,9 @@
 					  <tr>
 						<td class="tg-yzt1">Main Flow</td>
 						<th class="tg-yw4l">1. User selects delete account option <br />
-
-					2. Android client displays a confirmation pop up<br />
-
-					3. User selects confirm option<br />
-
-					4. Android client displays log in screen<br />
+											2. Android client displays a confirmation pop up<br />
+											3. User selects confirm option<br />
+											4. Android client displays log in screen<br />
 					   </tr>
 					  <tr>
 						<td class="tg-yzt1">PostCondition</td>
@@ -653,11 +705,10 @@
 					  <tr>
 						<td class="tg-yzt1">Main Flow</td>
 						<th class="tg-yw4l">1. User selects delete data visualisaton option <br />
-
-					2. Android client displays a list of available options <br />
-					3. User chooses one option<br />
-					 4. Android client displays a successful message<br />
-					  5. Android client returns to home page
+											2. Android client displays a list of available options <br />
+											3. User chooses one option<br />
+											4. Android client displays a successful message<br />
+											5. Android client returns to home page
 					   </tr>
 					  <tr>
 						<td class="tg-yzt1">PostCondition</td>
@@ -672,7 +723,11 @@
 					
 					  <br />
 
-			</div>
+				</div>
+             </div>    
+        </div>
+        <!-- /.container -->
+
     </div>
 	
 	    <!-- Footer -->

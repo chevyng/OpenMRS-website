@@ -248,6 +248,14 @@ h6 {
 	margin-bottom: 25px;
 }
 
+.paragraph-list {
+	font-size: 15px;
+	font-weight: 600;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 .image-caption {
 	font-size: 16px;
 	font-weight: 700;
@@ -338,5 +346,14 @@ a.linkjump{
   position: relative;
   top: -45px;
   visibility: hidden; 
- }
+}
 
+.paragraph-spacing{
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.paragraph-spacing-initial-problem{
+	margin-top: 35px;
+	margin-bottom: 60px;
+}

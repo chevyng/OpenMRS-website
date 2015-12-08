@@ -25,6 +25,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+	<link href="css/tablestyle.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
 	<link href="css/navbar-fixed-top.css" rel="stylesheet">
 	<link href="css/landing-page.css" rel="stylesheet">
@@ -104,142 +105,132 @@
     <div class="content-section-a-height">
 
         <div class="container">
-
+            <div class="row">
+                <div class="col-lg-10 col-sm-6 col-lg-offset-1">
+				
                     <h2 class="content-heading">Research</h2>
 
                     <h2 class="section-subheading" align="left">Wearables</h2>
-                    <p align="left"  style="Times New Roman;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To state the obvious just about every device we require is already available. There is a growing range of fitness/activity trackers and health device for monitoring and tracking fitness-related metrics such as distance walked or run, calorie consumption, heartrate, quality of sleep, blood-glucose, and body functions etc. These wearable devices are synced, in many cases wirelessly, to a computer or smartphone for long-term data tracking. There are also independent smartphone and Facebook apps. </p>
-                   
-                   <table>
+					<hr class="section-spacer-line">
+                    <p class="paragraph-description"> To state the obvious just about every device we require is already available. 
+													There is a growing range of fitness/activity trackers and health device for monitoring and tracking fitness-related metrics such as distance walked or run, calorie consumption, heartrate, quality of sleep, blood-glucose, and body functions etc.  </p>
+					<p class="paragraph-description"> These wearable devices are synced, in many cases wirelessly, to a computer or smartphone for long-term data tracking. There are also independent smartphone and Facebook apps. </p>
+
+					<p class="paragraph-list"><i>Table below is sorted alphabetically</i></p>
+				</div>
+			</div>
+				
+				
+                <table width="100%">
                     <thead>
                         <tr>
                             <th>Data Provider</th>
                             <th>Data Source</th>
                             <th>Related Open mHealth data schemas</th>
-                            <th>MSRP</th>
                             <th>Type</th>
                             <th>Measures</th>
                             <th>OS Available</th>
                             <th>Bluetooth mobile sync</th>
                             <th>Wifi sync</th>
                             <th>Battery vs charged</th>
-                            <th>Clip-on vs wristband</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Apple</td>
-                            <td>Health App</td>
+                            <td>HealthKit</td>
                             <td>Body height, Body weight, Step count, Heart rate, Blood glucose, Calories burned, Body mass index, Sleep duration</td>
-                            <td> </td>
                             <td>App/Platform</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Step count, Distance traveled, Floors climbed, Heart rate, Body weight and height, etc..</td>
+                            <td>iOS</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
                         </tr>
                         <tr>
                             <td>Fitbit</td>
                             <td>Flex</td>
                             <td>Step count, Physical activity, Sleep duration</td>
-                            <td>$99.95</td>
                             <td>Activity tracker</td>
                             <td>Step count, Distance traveled, Calories burned, Active Minutes, Sleep duration</td>
                             <td>iOS/Android/Windows/Windows Vista/OS X</td>
-                            <td>yes</td>
-                            <td>yes with 'dongle'</td>
-                            <td>charged</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>Yes with 'dongle'</td>
+                            <td>Charged</td>
                         </tr>
                         <tr>
                             <td>Fitbit</td>
                             <td>One</td>
                             <td>Physical Activity, Step count, Sleep duration</td>
-                            <td>$99.95</td>
                             <td>Activity tracker</td>
                             <td>Step count, Distance traveled, Calories burned, Active Minutes, Floors climbed, Sleep duration</td>
                             <td>iOS/Android/Windows/Windows Vista/OS X</td>
-                            <td>yes</td>
-                            <td>yes with 'dongle'</td>
-                            <td>charged</td>
-                            <td>clip-on</td>
+                            <td>Yes</td>
+                            <td>Yes with 'dongle'</td>
+                            <td>Charged</td>
                         </tr>
                          <tr>
                             <td>Fitbit</td>
                             <td>Aria</td>
                             <td>Body weight, Body mass index</td>
-                            <td>$129.95</td>
                             <td>Scale</td>
                             <td>Body weight, Body mass index, LEAN MASS, Body Fat</td>
                             <td>-</td>
-                            <td>no</td>
-                            <td>yes</td>
-                            <td>battery</td>
-                            <td>-</td>
+                            <td>No</td>
+                            <td>Yes</td>
+                            <td>Battery</td>
                         </tr>
                          <tr>
                             <td>Fitbit</td>
                             <td>Zip</td>
                             <td>Step count, Physical activity</td>
-                            <td>$59.95</td>
                             <td>Activity tracker</td>
                             <td>Step count, Distance traveled, Calories burned, Active Minutes</td>
                             <td>iOS/Android/Windows/Windows Vista/OS X</td>
-                            <td>yes</td>
-                            <td>yes with 'dongle'</td>
-                            <td>battery</td>
-                            <td>clip-on</td>
+                            <td>Yes</td>
+                            <td>Yes with 'dongle'</td>
+                            <td>Battery</td>
                         </tr>
                          <tr>
                             <td>Fitbit</td>
                             <td>Charge</td>
                             <td>Step count, Physical activity, Sleep duration</td>
-                            <td>$129.95</td>
                             <td>Activity tracker</td>
                             <td>Step count, Distance traveled, Calories burned, Active Minutes, Floors climbed, Sleep duration</td>
                             <td>iOS/Android/Windows/Windows Vista/OS X</td>
-                            <td>yes</td>
-                            <td>yes with 'dongle'</td>
-                            <td>charged</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>Yes with 'dongle'</td>
+                            <td>Charged</td>
                         </tr>
                          <tr>
                             <td>Fitbit</td>
                             <td>Charge HR</td>
                             <td>Step count, Physical activity, Sleep duration</td>
-                            <td>$149.95</td>
                             <td>Activity Tracker</td>
                             <td>Step count, Distance traveled, Calories burned, Active Minutes, Floors climbed, Sleep duration, Heart rate, Workouts</td>
                             <td>iOS/Android/Windows/Windows Vista/OS X</td>
-                            <td>yes</td>
-                            <td>yes with 'dongle'</td>
-                            <td>charged</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>Yes with 'dongle'</td>
+                            <td>Charged</td>
                         </tr>
                           <tr>
                             <td>Fitbit</td>
                             <td>Surge</td>
                             <td>Step count, Physical activity, Sleep duration</td>
-                            <td>$249.95</td>
                             <td>Activity tracker + GPS</td>
                             <td>Step count, Distance traveled, Calories burned, Active Minutes, Floors climbed, Sleep duration, Heart rate, Workouts, Distance traveled, Pace, Elevation, Route</td>
                             <td>iOS/Android/Windows/Windows Vista/OS X</td>
-                            <td>yes</td>
-                            <td>yes with 'dongle'</td>
-                            <td>charged</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>Yes with 'dongle'</td>
+                            <td>Charged</td>
                         </tr>
                           <tr>
                             <td>Fitbit</td>
                             <td>Fitbit App</td>
                             <td>Step count, Physical activity</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>Blood Glucose, Blood Pressure</td>
                             <td>iOS, Android, Windows</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -248,11 +239,9 @@
                             <td>Ginsberg.io</td>
                             <td>Activity and Mood Diary by Ginsberg</td>
                             <td>-</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>Mood, daily diary events, Sleep duration, Step count, exercise, nutrition, Body weight, alcohol consumption. Log exercise including running, cycling, walking, yoga, meditation and strength training.</td>
                             <td>iOS, Android</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -261,11 +250,9 @@
                             <td>GoogleFit</td>
                             <td>Google Fit app</td>
                             <td>Calories burned, Step count, Physical activity, Body weight</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>Calories burned, Distance traveled, Step count, Physical activity, Body weight</td>
                             <td>Android</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -274,58 +261,49 @@
                             <td>iHealth</td>
                             <td>Wireless blood pressure wrist monitor</td>
                             <td>-</td>
-                            <td>$79.95</td>
                             <td>Blood Pressure Monitor</td>
                             <td>Blood Pressure, Pulse</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>charged</td>
-                            <td>-</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Charged</td>
                         </tr>
                           <tr>
                             <td>iHealth</td>
                             <td>Wireless blood pressure monitor</td>
                             <td>-</td>
-                            <td>$99.95</td>
                             <td>Blood Pressure Monitor</td>
                             <td>Blood Pressure, Pulse</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>charged</td>
-                            <td>-</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Charged</td>
                         </tr>
                           <tr>
                             <td>iHealth</td>
                             <td>Wireless body analysis scale</td>
                             <td>-</td>
-                            <td>$99.95</td>
                             <td>Scale + Body Composition</td>
                             <td>Body weight, Body fat, Body water, Visceral fat, Body muscle mass, Daily calorie intake</td>
                             <td>iOS, Android</td>
-                            <td>no</td>
-                            <td>yes</td>
-                            <td>battery </td>
-                            <td>-</td>
+                            <td>No</td>
+                            <td>Yes</td>
+                            <td>Battery </td>
                         </tr>
                          <tr>
                             <td>iHealth</td>
                             <td>iHealth Lite</td>
                             <td>-</td>
-                            <td>$79.95</td>
                             <td>Scale</td>
                             <td>Body weight, Body mass index </td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>battery</td>
-                            <td></td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Battery</td>
                         </tr>
                          <tr>
                             <td>iHealth</td>
                             <td>iHealth Edge</td>
-                            <td>$69.95</td>
                             <td>Activity tracker</td>
                             <td>Step count, Distance traveled, Calories burned, Sleep duration</td>
                             <td>iOS, Android</td>
@@ -333,56 +311,47 @@
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
-                            <td>wristband</td>
                         </tr>
                          <tr>
                             <td>iHealth</td>
                             <td>Wireless Pulse Oximeter</td>
                             <td>-</td>
-                            <td>$69.95</td>
                             <td>Pulse + SpO2</td>
                             <td>Blood Oxygen Saturation, Pulse</td>
                             <td>iOS</td>
-                            <td>yes</td>
+                            <td>Yes</td>
                             <td>-</td>
-                            <td>battery</td>
-                            <td>-</td>
+                            <td>Battery</td>
                         </tr>
                          <tr>
                             <td>iHealth</td>
                             <td>Wireless Smart Gluco-Monitoring System</td>
                             <td>-</td>
-                            <td>$29.95</td>
                             <td>Glucometer</td>
                             <td>Blood glucose </td>
                             <td>iOS</td>
-                            <td>yes</td>
+                            <td>Yes</td>
                             <td>-</td>
-                            <td>charged</td>
-                            <td>-</td>
+                            <td>Charged</td>
                         </tr>
                          <tr>
                             <td>iHealth</td>
                             <td>iHealth Align</td>
                             <td>-</td>
-                            <td>$16.96</td>
                             <td>Glucometer</td>
                             <td>Blood glucose </td>
                             <td>iOS</td>
-                            <td>yes</td>
+                            <td>Yes</td>
                             <td>-</td>
-                            <td>battery</td>
-                            <td>-</td>
+                            <td>Battery</td>
                         </tr>
                          <tr>
                             <td>iHealth</td>
                             <td>iHealth Gluco-Smart</td>
                             <td>-</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>Blood glucose </td>
                             <td>iOS</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -391,24 +360,9 @@
                             <td>iHealth</td>
                             <td>iHealth SpO2</td>
                             <td>-</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>Blood Oxygen Saturation, Pulse</td>
                             <td>iOS</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                         <tr>
-                            <td>Healthvault</td>
-                            <td>-</td>
-                            <td>Physical activity, Step count, Blood pressure, Body height, Body weight, Blood glucose</td>
-                            <td>-</td>
-                            <td>Platform</td>
-                            <td>Blood glucose, Blood pressure, Body height, Body weight, Heart rate, Physical activity, Step count</td>
-                            <td>-</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -417,11 +371,9 @@
                             <td>Jawbone</td>
                             <td>UP by Jawbone app</td>
                             <td>Physical activity, Sleep duration, Body weight, Step count</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>Activity, Sleep duration, Calories burned, Body weight</td>
                             <td>iOS, Android</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -430,115 +382,97 @@
                             <td>Jawbone</td>
                             <td>Up Move</td>
                             <td>Physical activity, Sleep duration, Step count</td>
-                            <td>$49.99</td>
                             <td>Activity Tracker</td>
                             <td>Activity, Sleep duration, Calories burned/food logging</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>battery </td>
-                            <td>clip-on</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Battery </td>
                         </tr>
                          <tr>
                             <td>Jawbone</td>
                             <td>UP2</td>
                             <td>Physical activity, Sleep duration, Step count$99.99Activity Tracker</td>
-                            <td>$99.99Activity Tracker</td>
                             <td>Activity Tracker</td>
                             <td>Activity, Step count, Calories burned/food logging, Sleep duration tracking </td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>charged</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Charged</td>
                         </tr>
                          <tr>
                             <td>Jawbone</td>
                             <td>UP3</td>
                             <td>Physical activity, Sleep duration, Step count, Heart rate</td>
-                            <td>$179.99</td>
                             <td>Activity Tracker</td>
                             <td>Activity, Step count, Calories burned, food logging, Sleep duration, Advanced sleep duration, Heart rate</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>charged</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Charged</td>
                         </tr>
                          <tr>
                             <td>Jawbone</td>
                             <td>UP4</td>
                             <td>Physical activity, Sleep duration, Step count, Heart rate</td>
-                            <td>$199.99</td>
                             <td>Activty Tracker + Payment</td>
                             <td>Activity, Step count, Calories burned, food logging, Sleep duration, Advanced sleep duration, Heart rate</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>charged</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Charged</td>
+                        </tr>
+						<tr>
+                            <td>Microsoft</td>
+                            <td>Healthvault<td>
+                            <td>Physical activity, Step count, Blood pressure, Body height, Body weight, Blood glucose</td>
+                            <td>Platform</td>
+                            <td>Blood glucose, Blood pressure, Body height, Body weight, Heart rate, Physical activity, Step count</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
                         </tr>
                          <tr>
                             <td>Mistfit</td>
                             <td>Shine</td>
                             <td>Step count, Physical activity, Sleep duration$69.99</td>
-                            <td>$69.99</td>
                             <td>Activity Tracker</td>
                             <td>Step count, Sleep duration, Calories burned, Distance traveled</td>
                             <td>iOS, Android, Windows</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>battery</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Battery</td>
                         </tr>
                          <tr>
                             <td>Mistfit</td>
                             <td>Flash</td>
                             <td>Step count, Physical activity, Sleep duration</td>
-                            <td>$29.99</td>
                             <td>Activity Tracker </td>
                             <td>Step count, Sleep duration, Calories burned, Distance traveled</td>
                             <td>iOS, Android, Windows</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>battery</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Battery</td>
                         </tr>
                          <tr>
                             <td>Mistfit</td>
                             <td>Beddit</td>
                             <td>Step count, Physical activity, Sleep duration</td>
-                            <td>$149.99</td>
                             <td>Sleep duration Tracker</td>
                             <td>Sleep duration time, Sleep duration cycles/light and deep Sleep duration, awake times, Heart rate</td>
                             <td>iOS</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>charged</td>
-                            <td>-</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Charged</td>
                         </tr>
                          <tr>
                             <td>Mistfit</td>
                             <td>Mistfit App</td>
                             <td>Step count, Physical activity, Sleep duration</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>(for use with Shine/Flash) - Distance traveled, Calories burned, Step count, Sleep duration</td>
                             <td>iOS, Android</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
-                        </tr>
-                         <tr>
-                            <td>Moves</td>
-                            <td>Moves App</td>
-                            <td>None Currently</td>
-                            <td>Step count, minutes of walking, cycling, running, Calories burned</td>
-                            <td>iOS, Android</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -547,11 +481,9 @@
                             <td>Runkeeper</td>
                             <td>Runkeeper App</td>
                             <td>Calories burned, Physical activity</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>Pace, Cycling speed, Route, Distance traveled, Elevation, Body weight (?), Calories burned ...more? </td>
                             <td>iOS, Android</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -560,11 +492,9 @@
                             <td>Strava</td>
                             <td>Strava mobile app</td>
                             <td>None Currently</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>Distance traveled, pace, speed, elevation gained and Calories burned burned, Heart rate (?)</td>
                             <td>iOS, Android</td>
-                            <td>-</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
@@ -573,114 +503,108 @@
                             <td>Withings</td>
                             <td>Activité</td>
                             <td>Step count, Calories burned, Sleep duration</td>
-                            <td>$450.00</td>
                             <td>Activity tracker</td>
                             <td>Step count, Running, Distance traveled, Calories burned, Sleep duration, Swimming</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>battery</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Battery</td>
                         </tr>
                           <tr>
                             <td>Withings</td>
                             <td>Activité Pop</td>
                             <td>Step count, Calories burned, Sleep duration</td>
-                            <td>$149.95</td>
                             <td>Activity tracker</td>
                             <td>Step count, Running, Distance traveled, Calories burned, Sleep duration, Swimming</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>battery</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Battery</td>
                         </tr>
                           <tr>
                             <td>Withings</td>
                             <td>Wireless Scale</td>
                             <td>Body weight</td>
-                            <td>$99.95</td>
                             <td>Scale</td>
                             <td>Body weight, Body mass index</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>yes</td>
-                            <td>battery</td>
-                            <td>-</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Battery</td>
                         </tr>
                           <tr>
                             <td>Withings</td>
                             <td>Smart Body Analyzer</td>
                             <td>Body weight, Heart rate</td>
-                            <td>$149.95</td>
                             <td>Scale + environment</td>
                             <td>Body weight, Body mass index, Body Fat, Heart rate, Air Quality/CO2</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>yes</td>
-                            <td>battery</td>
-                            <td>-</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Battery</td>
                         </tr>
                           <tr>
                             <td>Withings</td>
                             <td>Pulse O2</td>
                             <td>Step count, Calories burned, Heart rate, Sleep duration</td>
-                            <td>$99.95</td>
                             <td>Activity tracker</td>
                             <td>Step count, Running, Distance traveled, Calories burned, Sleep duration, Elevation, Heart rate, SPO2, Activity duration</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>charged</td>
-                            <td>wristband</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Charged</td>
                         </tr>
                           <tr>
                             <td>Withings</td>
                             <td>Blood Pressure Monitor</td>
                             <td>Blood pressure, Heart rate</td>
-                            <td>$129.95</td>
                             <td>Blood Pressure Monitor</td>
                             <td>Blood Pressure, Heart rate</td>
                             <td>iOS, Android</td>
-                            <td>yes</td>
-                            <td>no</td>
-                            <td>battery</td>
-                            <td>-</td>
+                            <td>Yes</td>
+                            <td>No</td>
+                            <td>Battery</td>
                         </tr>
                           <tr>
                             <td>Withings</td>
                             <td>Aura</td>
                             <td>Sleep duration, Heart rate</td>
-                            <td>$299.95</td>
                             <td>Sleep duration Tracker</td>
                             <td>Sleep duration, Heart rate</td>
                             <td>iOS</td>
-                            <td>yes</td>
-                            <td>yes</td>
-                            <td>charged</td>
-                            <td>-</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Charged</td>
                         </tr>
                           <tr>
                             <td>Withings</td>
                             <td>Health Mate</td>
                             <td>Step count, Sleep duration, Blood pressure, Heart rate, Body weight</td>
-                            <td>Free</td>
                             <td>App</td>
                             <td>Step count, Distance traveled, Sleep duration, Blood pressure, Heart rate, Body weight</td>
                             <td>iOS, Android</td>
                             <td>-</td>
                             <td>-</td>
                             <td>-</td>
-                            <td>-</td>
                         </tr>
                         </tbody>
-                    </table>
+                    
                 </table>
+				
+			<div class="row">
+                <div class="col-lg-10 col-sm-6 col-lg-offset-1">
+				
+				<hr class="section-spacer-line">
+				<h2 class="section-subheading" align="left">Our Conclusion</h2>
+                <p class="paragraph-description"> We decided to use Fitbit Charge HR as it measures the heart rate as well as saving data regarding sleep, nutrition and activity. Furthermore, it can be synchronised with GoogleFit which is what we need.</p>
 
-                <p align="left"> Wich one is better?</p>
-                <p align="left"> We decided to use Fitbit Charge HR as it measures the heart rate as well as saving data regarding sleep, nutrition and activity. Furthermore, it can be synchronised with GoogleFit which is what we need.</p>
-		</div>
-	</div>
+				</div>
+             </div>    
+        </div>
+        <!-- /.container -->
+
+    </div>
+				
 	
 	    <!-- Footer -->
 		<footer class="footer">
