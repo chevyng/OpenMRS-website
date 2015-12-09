@@ -357,3 +357,10 @@ a.linkjump{
 	margin-top: 35px;
 	margin-bottom: 60px;
 }
+
+.subheading-color{
+	text-align:left;
+	color: #2B2929;
+	font-size: 30px;
+	margin-bottom: -5px;
+}
