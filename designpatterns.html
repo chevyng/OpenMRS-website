@@ -41,6 +41,14 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    
+     <link rel="stylesheet" href="joint.css" />
+    <script src="jquery.js"></script>
+    <script src="lodash.js"></script>
+    <script src="backbone.js"></script>
+    <script src="joint.js"></script>
+    
+    
 </head>
 
 <body>
@@ -110,31 +118,42 @@
 		     <div class="row">
                 <div class="col-lg-10 col-sm-6 col-lg-offset-1">
 
-                    <h2 class="content-heading">Use Cases</h2>
+                    <h2 class="content-heading">Design Patterns</h2>
 
-					 <h2 class="subheading-color">OpenMRS Platform Use Cases</h2>
+					 <h2 class="subheading-color">Behavioural Design Patterns</h2>
 					<hr class="section-spacer-line">
-					<p class="paragraph-description">We wrote use cases that were based on the requirements and user interaction that would occur when using our OpenMRS platform.</p>
-					<p class="paragraph-list">Use cases may be subjected to change over the development of our project </p>
-					
-					<ul class="list-inline intro-social-buttons" align="left">
-                            <li>
-                                <a href="platformusecases.html" class="btn btn-default btn-lg"><i></i> <span class="network-name">View OpenMRS Platform Use Cases</span></a>
-                            </li>
-                     </ul>
-					
-					<p><a class="usecase-linkjump"></a></p>	
-					<h2 class="subheading-color">Android Application Use Cases</h2>
+                   <br><br>
+                    <ol>
+                        <li><p class="paragraph-list"><u><i>Iterator Pattern</u></i> - has been used to get way to access the elements of a collection object in a sequential manner without any need to know its underlying representation. The android client implements a container class with all the patient’s records and an iterator will be used to access the elements of the collection.</p></li>
+                        <li><p class="paragraph-list"><u><i>Mediator Pattern</u></i> - has been used to reduce communication complexity between multiple objects and classes by providing a mediator class which normally handles all the communications between different classes. . A Chat class has been provided that assigns the doctor to the patient (as the user is required to manually type in their doctor’s name) The android client provides a ChatMessaging class to allow the communication between the patient and their doctor. (the mediator class)</p></li>
+                        <br><img src="images/design_patterns_1.png" </img>
+                        <br><li><p class="paragraph-list"><u><i>Interpreter Pattern</u></i> - This pattern has been used by creating a Response.Listener<JSONObject> interface which is used after a GET or POST request has been made to the server. It will get the response by the server in a JSONObject format and interpret the results.</p></li>
+                        <li><p class="paragraph-list"><u><i>Strategy Pattern</u></i> - has been used to enable an algorithm’s behaviour to be selected at runtime. For instance, depending on the username and password inputted on the home screen, the user will be able to access the application either from the patient’s or doctor’s point of view. Another example would be saving the data in the local database if an online connection to the database is not available.</p></li>
+                    </ol>  
+				
+                    <h2 class="subheading-color">Creational Design Patterns</h2>
 					<hr class="section-spacer-line">
-					<p class="paragraph-description">The android application use cases are written based on the requirements our client had specify.</p>
-					<p class="paragraph-list">Use cases may be subjected to change over the development of our project </p>
-					
-					<ul class="list-inline intro-social-buttons" align="left">
-                            <li>
-                                <a href="mobileusecases.html" class="btn btn-default btn-lg"><i></i> <span class="network-name">View Android Application Use Cases</span></a>
-                            </li>
-                     </ul>	
-					 
+                   <br><br>
+                    <ol>
+                        <li><p class="paragraph-list"><u><i>Builder Design Pattern </u></i> - has been used to separate the construction of a complex object form from its representation so that the same construction process can create different representations. To implement the FatSecret API for the “SearchFood” class a different class “Food” was needed to create a different representation for each food returned in the JSON that contains the name of the food as well as its number of calories.  The “SearchFood” class plays the part of the “director” class which invokes the “builder” (“Food” class) which creates a part of the object each time it is called and saves all the intermediate states.
+</p></li>
+                        <li><p class="paragraph-list"><u><i>Singleton Pattern </u></i> -ensures one class has one instance providing a global point access to it. This pattern have been used to coordinate actions across the system and to permit lazy allocation and initialization. For example Address, Location, Person, Patient and Visit are java classes that create new instance of the class if one does not exist. If an instance already exists, it will return an instance to that object.
+</p></li>
+                    </ol>  
+                    
+                    <h2 class="subheading-color">Structural Design Patterns</h2>
+					<hr class="section-spacer-line">
+                   <br><br>
+                    <ol>
+                        <li><p class="paragraph-list"><u><i>Design Pattern Adapter </u></i> -has been used to work as a bridge between two incompatible interfaces by joining functionalities of idependent or incompatible interfaces. This pattern was used to implement the ActiveVisitesArray, LocationArray, PatientArray, PatientHierarchy, PatientVisitsArray, ScreenSlidePager, SettingsArray and VisitExpandableList adapters.</p></li>
+                        <li><p class="paragraph-list"><u><i>Filter Pattern</u></i> -has been used to enable the developer to filter a set of objects using different criteria and chaining them in a decoupled way through logical operations. The project has a Food singleton that has food name and calories as properties. The SearchFood class is used as a filter to return the objects depending on the required criteria.
+</p></li>
+                        <br><img src="images/design_patterns_2.png" </img>
+                        <li><p class="paragraph-list"><u><i>Composite Pattern</u></i> - has been used to treat a group of objects in similar way as a single object. This pattern creates a class that contains a group of its own objects. The project provides a Food Class having a list of Food objects. The Food class will be further used to create and print any food searches.
+
+</p></li>
+                    </ol>  
+				
 				</div>
              </div>    
         </div>
