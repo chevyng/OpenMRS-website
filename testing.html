@@ -26,9 +26,10 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+    <link href="css/tablestyle.css" rel="stylesheet" >
     <link href="css/carousel.css" rel="stylesheet">
-	<link href="css/navbar-fixed-top.css" rel="stylesheet">
-	<link href="css/landing-page.css" rel="stylesheet">
+	  <link href="css/navbar-fixed-top.css" rel="stylesheet">
+	  <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -88,8 +89,10 @@
               <li class="dropdown">
               <a href="development.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><a href="development.html">Development</a></li>
                 <li><a href="deployment.html">Deployment</a></li>
-				<li><a href="testing.html">Testing</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="testing_strategy.html">Testing Strategy</a></li>
               </ul>
             </li>
 			
@@ -111,38 +114,300 @@
             <div class="row">
                 <div class="col-lg-10 col-sm-6 col-lg-offset-1">
 				
-                    <h2 class="content-heading">Testing Strategy</h2>
+                    <h2 class="content-heading">Testing</h2>
 
 					<div class="col-lg">
-					<h2 class="subheading-color">Unit Testing</h2>
+					<h2 class="subheading-color">Testing Overview</h2>
 					 <hr class="section-spacer-line">
 					</div>
 					
-					<p class="paragraph-description">Unit testing will be carried out on our codes to ensure that each functions that we have implemented are operating properly before committing it to the repository</p>
-					<p class="paragraph-description">We are planning to use JUnit to test our Android client and OpenMRS modules that might be needed.</p>
+					<p class="paragraph-description">Over the course of the project, we have adopted unit testing to test our modules that we implemented. Once unit testing was done to ensure that our code was operating properly, we integrated multiple individual modules together and conducted integration testing to ensure the new combined modules were working as expected as well.</p>
 
-					<div class="col-lg">
-					<h2 class="subheading-color" style="padding-top:30px">Integration Testing</h2>
-					 <hr class="section-spacer-line">
-					</div>
-					
-					<p class="paragraph-description">Integration testing will be carried out after individual modules that have been unit tested are combined together. This will ensure that the combined modules are operating as expected.</p>
-						
-					<div class="col-lg">
-					<h2 class="subheading-color" style="padding-top:30px">Functional Testing</h2>
-					 <hr class="section-spacer-line">
-					</div>
-					
-					<p class="paragraph-description">Functional testing is a key part of development to ensure that the functional requirements that have been agreed with the client are being fulfilled. </p>
-					<p class="paragraph-description">We will conduct functional testing on both our Android client and OpenMRS server to test the features and functionalities of our system.  </p>
-					<p class="paragraph-description">We are planning to use Espresso by Android developers to conduct our functional UI testing on our Android client, and manual testing on our OpenMRS server functionalities. </p>
-					
-					<div class="col-lg">
-					<h2 class="subheading-color" style="padding-top:30px">User Acceptance Testing</h2>
-					 <hr class="section-spacer-line">
-					</div>
-					
-					<p class="paragraph-description">We will be conducting our User Acceptance Testing on a weekly / biweekly basis with our clients to ensure that our clients are satisfied with our project development.</p>
+                    <p class="paragraph-description"> We also conducted manual testing when other testing method wasn't feasible such as checking the uploaded data on OpenMRS server to ensure that it was correct.</p>
+
+                    <p class="paragraph-description"> The table below shows the test we have conducted over the development period </p>
+
+          <!--
+					<p class="paragraph-description">We are planning to use JUnit to test our Android client and OpenMRS modules that might be needed.</p> 
+          -->
+
+          <p class="table-title" id="omrs-platform">OpenMRS Android Application</p>
+          <table style="text-align:left">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Test Scenario</th>
+                            <th>Expected Result</th>
+                            <th>Actual Result</th>
+                            <th>Pass/Fail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td colspan="5" style="background-color:#b8cce4"> OpenMRS REST API</td>
+                        </tr>
+
+                        <tr>
+                            <td> 1</td>
+                            <td> App is able to get patient details from OpenMRS server</td>
+                            <td> App receives patient details </td>
+                            <td> App receives patient details </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 2</td>
+                            <td> App is able to get patient’s observation from OpenMRS </td>
+                            <td> App receive patient’s observation data </td>
+                            <td> App receive patient’s observation data </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td> App is able to send patient observations to OpenMRS </td>
+                            <td> App uploads patient observations to OpenMRS </td>
+                            <td> App uploads patient observations to OpenMRS </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td> App is able to register a new patient  </td>
+                            <td> App registers new patient on OpenMRS </td>
+                            <td> App registers new patient on OpenMRS </td>
+                            <td> Pass </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="5" style="background-color:#b8cce4">GoogleFit API</td>
+                        </tr>
+                        <tr>
+                            <td>1 </td>
+                            <td> First time GoogleFit authentication requests access to Google account </td>
+                            <td> App displays a new dialog for users to choose the Google account they used with GoogleFit </td>
+                            <td> App displays a new dialog for users to choose the Google account they used with GoogleFit </td>
+                            <td>Pass </td>
+                        </tr>
+                         <tr>
+                            <td>2 </td>
+                            <td> Request user’s data from GoogleFit </td>
+                            <td> App output the correct data  </td>
+                            <td> App output the correct data </td>
+                            <td>Pass </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="5" style="background-color:#b8cce4">Fitbit API</td>
+                        </tr>
+                        <tr>
+                            <td>1 </td>
+                            <td>Launching of ChromeTab to Fitbit login page </td>
+                            <td>App uses ChromeTab to launch login page </td>
+                            <td>App launches Chrome and shows Fitbit login page </td>
+                            <td>Pass </td>
+                        </tr>
+                         <tr>
+                            <td>2 </td>
+                            <td>Fitbit authentication redirect back to app </td>
+                            <td>Fitbit redirects user back to mobile app with authorization code  </td>
+                            <td>Fitbit redirects user back to mobile app with authorization code as URL parameter </td>
+                            <td>Pass </td>
+                        </tr>
+                        <tr>
+                            <td>3 </td>
+                            <td>App sends request to Fitbit server using authorization code to exchange access code </td>
+                            <td>Access and refresh token received </td>
+                            <td>Access and refresh tokens received by app</td>
+                            <td>Pass </td>
+                        </tr>
+                        <tr>
+                            <td>4 </td>
+                            <td>Using stored refresh token to get new access token once access token has expire </td>
+                            <td>New access token and refresh tokens received from Fitbit </td>
+                            <td>New access token and refresh tokens received from Fitbit </td>
+                            <td>Pass </td>
+                        </tr>
+                        <tr>
+                            <td>5 </td>
+                            <td>Request user’s data from Fitbit using access token </td>
+                            <td>New access token and refresh tokens received from Fitbit</td>
+                            <td>User data received by app </td>
+                            <td>Pass </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="5" style="background-color:#b8cce4">Database</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> Database created successfully</td>
+                            <td> Database created </td>
+                            <td> Database created </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 2 </td>
+                            <td> Data inserted into database successfully</td>
+                            <td> Data inserted into database </td>
+                            <td> Data inserted into database </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 3 </td>
+                            <td> Update existing data in database </td>
+                            <td> Data updated successfully </td>
+                            <td> Data updated successfully </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 4 </td>
+                            <td> Retrieve existing data from database</td>
+                            <td> Data retrieved successfully </td>
+                            <td> Data retrieved successfully </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                          <td colspan="5" style="background-color:#b8cce4">GraphData</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> Getting and setting values using GraphData class</td>
+                            <td> Values set then get are the same </td>
+                            <td> Values set then get are the same </td>
+                            <td> Pass </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="5" style="background-color:#b8cce4"> Integration of Fitbit with SyncData page</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> Downloaded Fitbit data is uploaded to OpenMRS server</td>
+                            <td> OpenMRS server should contain Fitbit data </td>
+                            <td> OpenMRS contains Fitbit data </td>
+                            <td> Pass </td>
+                        </tr>
+
+                        <tr>
+                          <td colspan="5" style="background-color:#b8cce4"> Integration of GoogleFit with SyncData page</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> First time GoogleFit authentication requests access to Google account </td>
+                            <td> App displays a new dialog for users to choose the Google account they used with GoogleFit </td>
+                            <td> App displays a new dialog for users to choose the Google account they used with GoogleFit </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 2</td>
+                            <td> Request user’s data from GoogleFit </td>
+                            <td> App output the correct data</td>
+                            <td> App output the correct data</td>
+                            <td> Pass </td>
+                        </tr>
+
+                       <tr>
+                          <td colspan="5" style="background-color:#b8cce4"> Manual Input</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> Height data is uploaded to OpenMRS server with correct date</td>
+                            <td> OpenMRS server contains height data with correct date</td>
+                            <td> OpenMRS server contains height data with correct date</td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 2</td>
+                            <td> Weight data is uploaded to OpenMRS server with correct date</td>
+                            <td> OpenMRS server contains weight data with correct date </td>
+                            <td> OpenMRS server contains weight data with correct date </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 3</td>
+                            <td> Heart rate data is uploaded to OpenMRS server with correct date</td>
+                            <td> OpenMRS server contains heart rate data with correct date </td>
+                            <td> OpenMRS server contains heart rate data with correct date </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 4</td>
+                            <td> Calories data is uploaded to OpenMRS server with correct date</td>
+                            <td> OpenMRS server contains calories data with correct date </td>
+                            <td> OpenMRS server contains calories data with correct date </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 5</td>
+                            <td> Calories burned data is uploaded to OpenMRS server with correct date</td>
+                            <td> OpenMRS server contains calories burned data with correct date </td>
+                            <td> OpenMRS server contains calories burned data with correct date </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 6</td>
+                            <td> Distance data is uploaded to OpenMRS server with correct date</td>
+                            <td> OpenMRS server contains distance data with correct date </td>
+                            <td> OpenMRS server contains distance data with correct date </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 7</td>
+                            <td> Steps data is uploaded to OpenMRS server with correct date</td>
+                            <td> OpenMRS server contains steps data with correct date </td>
+                            <td> OpenMRS server contains steps data with correct date </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 8</td>
+                            <td> Floors climbed data is uploaded to OpenMRS server with correct date</td>
+                            <td> OpenMRS server contains floors climbed data with correct date </td>
+                            <td> OpenMRS server contains floors climbed data with correct date </td>
+                            <td> Pass </td>
+                        </tr>
+                        <tr>
+                            <td> 9</td>
+                            <td> Active minutes data is uploaded to OpenMRS server with correct date</td>
+                            <td> OpenMRS server contains active minutes data with correct date </td>
+                            <td> OpenMRS server contains active minutes data with correct date </td>
+                            <td> Pass </td>
+                        </tr>
+                     
+
+                         <tr>
+                          <td colspan="5" style="background-color:#b8cce4"> Graph Visualisation</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> Graph should show steps data correctly over the past 5 days </td>
+                            <td> Graph shows correct data </td>
+                            <td> Graph shows correct data</td>
+                            <td> Pass </td>
+                        </tr>
+
+                         <tr>
+                          <td colspan="5" style="background-color:#b8cce4"> Health Data Analytics</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> Average heart rate shown is computed as average data from database over the past 5 days </td>
+                            <td> Average heart rate is the average data number of entries found in database </td>
+                            <td> Average heart rate is the average data number of entries found in database </td>
+                            <td> Pass </td>
+                        </tr>         
+
+                        <tr>
+                          <td colspan="5" style="background-color:#b8cce4"> Chat Notification</td>
+                        </tr>
+                        <tr>
+                            <td> 1</td>
+                            <td> Notification is issued when user receive a new chat message from their doctor while not currently on chat tab of the app</td>
+                            <td> The app issues a notification</td>
+                            <td> The app issues a notification</td>
+                            <td> Pass </td>
+                        </tr>               
+
+                    </tbody>
+          </table>
+
 					 
 				</div>
              </div>    

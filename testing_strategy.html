@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Biweekly Report Page">
+    <meta name="description" content="Testing Page">
 
+    <link rel="stylesheet" href="css/style.css">
     <title>OpenMRS-Hypertension</title>
 
     <!-- Bootstrap core CSS -->
@@ -24,9 +26,10 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+    <link href="css/tablestyle.css" rel="stylesheet" >
     <link href="css/carousel.css" rel="stylesheet">
-	<link href="css/navbar-fixed-top.css" rel="stylesheet">
-	<link href="css/landing-page.css" rel="stylesheet">
+      <link href="css/navbar-fixed-top.css" rel="stylesheet">
+      <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -42,7 +45,7 @@
 </head>
 
 <body>
-
+    
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -65,17 +68,10 @@
                 <li><a href="client.html">Client</a></li>
               </ul>
             </li>
-			
-			<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Management <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Biweekly Report</a></li>
-                <li><a href="gantt_chart.html">Gantt chart</a></li>
-				<li><a href="gitrepo.html">Git Repository</a></li>
-              </ul>
-            </li>
-			
-			<li class="dropdown">
+            
+            <li><a href="project_management.html">Project Management</a></li>
+            
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analysis <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="requirement.html">Requirement</a></li>
@@ -83,12 +79,12 @@
                 <li><a href="system.html">Architectural Diagrams</a></li>
                 <li><a href="designpatterns.html">Design Patterns</a></li>
                 <li><a href="usecases.html">Use Cases</a></li>
-				<li><a href="personas.html">User Personas</a></li>
+                <li><a href="personas.html">User Personas</a></li>
               </ul>
             </li>
-			
-			<li><a href="tools.html">Tools</a></li>
-			<li><a href="design.html">Design</a></li>
+            
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="design.html">Design</a></li>
             
               <li class="dropdown">
               <a href="development.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
@@ -99,7 +95,11 @@
                 <li><a href="testing_strategy.html">Testing Strategy</a></li>
               </ul>
             </li>
-
+            
+            <li><a href="https://github.com/DianaD96/Team13AndroidClient"><i class="fa fa-github fa-fw"></i>Git Repo</i></a></li>
+            <li><a href="http://group13.freeforums.org/"></i>Forums</i></a></li>
+               
+            
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -108,73 +108,78 @@
 
     <!-- Page Content -->
 
-    <div class="content-section-a" style="height: 100vh">
+    <div class="content-section-a-height">
 
         <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-sm-6 col-lg-offset-1">
+                
+                    <h2 class="content-heading">Testing Strategies</h2>
 
-                    <h2 class="content-heading">Bi-Weekly Reports</h2>
-					
-						<ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="reports/Bi-Weekly Report 1.pdf" class="btn btn-default btn-lg"><i></i> <span class="network-name">Report 1 (Week 1-2)</span></a>
-                            </li>
-                        </ul>
-						
-						<ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="reports/Bi-Weekly Report 2.pdf" class="btn btn-default btn-lg"><i></i> <span class="network-name">Report 2 (Week 3-4)</span></a>
-                            </li>
-                        </ul>
-
-						<ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="reports/Bi-Weekly Report 3.pdf" class="btn btn-default btn-lg"><i></i> <span class="network-name">Report 3 (Week 5-6)</span></a>
-                            </li>
-                        </ul>
-						
-						<ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="reports/Bi-Weekly Report 4.pdf" class="btn btn-default btn-lg"><i></i> <span class="network-name">Report 4 (Week 7-8)</span></a>
-                            </li>
-                        </ul>
-						
+                    <div class="col-lg">
+                    <h2 class="subheading-color">Unit Testing</h2>
+                     <hr class="section-spacer-line">
+                    </div>
+                    
+                    <p class="paragraph-description">Unit testing will be carried out on our codes to ensure that each functions that we have implemented are operating properly before committing it to the repository</p>
 
 
-		
-
-
+                    <div class="col-lg">
+                    <h2 class="subheading-color" style="padding-top:30px">Integration Testing</h2>
+                     <hr class="section-spacer-line">
+                    </div>
+                    
+                    <p class="paragraph-description">Integration testing will be carried out after individual modules that have been unit tested are combined together. This will ensure that the combined modules are operating as expected.</p>
+                        
+                    <div class="col-lg">
+                    <h2 class="subheading-color" style="padding-top:30px">Functional Testing</h2>
+                     <hr class="section-spacer-line">
+                    </div>
+                    
+                    <p class="paragraph-description">Functional testing is a key part of development to ensure that the functional requirements that have been agreed with the client are being fulfilled. </p>
+                    <p class="paragraph-description">We will conduct functional testing on both our Android client and OpenMRS server to test the features and functionalities of our system.  </p>
+                    <p class="paragraph-description">We are planning to use Espresso by Android developers to conduct our functional UI testing on our Android client, and manual testing on our OpenMRS server functionalities. </p>
+                    
+                    <div class="col-lg">
+                    <h2 class="subheading-color" style="padding-top:30px">User Acceptance Testing</h2>
+                     <hr class="section-spacer-line">
+                    </div>
+                    
+                    <p class="paragraph-description">We will be conducting our User Acceptance Testing on a weekly / biweekly basis with our clients to ensure that our clients are satisfied with our project development.</p>
+                     
+                </div>
+             </div>    
         </div>
         <!-- /.container -->
 
     </div>
 
 
-   <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="list-inline">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="#">Home</a>
                         </li>
-						
-						<li class="pull-right">
-							<a href="#">Back to top</a>
-						</li>
+
+                        
+                        <li class="pull-right">
+                            <a href="#">Back to top</a>
+                        </li>
                     </ul>
-					
-					<ul class="list-inline">
-						<li class="copyright text-muted small">Copyright &copy; System Engineering Project Team 13</li>
-						<li class="copyright text-muted small pull-right">Template by Bootstrap</li>
-					</ul>
+                    
+                    <ul class="list-inline">
+                        <li class="copyright text-muted small">Copyright &copy; System Engineering Project Team 13</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
-
-
-    <!-- jQuery -->
+    
+     <!-- jQuery -->
     <script src="assets/js/jquery.js"></script>
 
     <!-- Bootstrap core JavaScript
@@ -190,3 +195,4 @@
 </body>
 
 </html>
+
