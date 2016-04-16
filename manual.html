@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	
+	<script src="http://code.highcharts.com/adapters/standalone-framework.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Initial Problem Page">
+
+    <title>OpenMRS-Hypertension</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+	<link href="css/navbar-fixed-top.css" rel="stylesheet">
+	<link href="css/landing-page.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">OpenMRS-Hypertension</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overview <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Initial Problem</a></li>
+                <li><a href="client.html">Client</a></li>
+              </ul>
+            </li>
+			
+			<li><a href="project_management.html">Project Management</a></li>
+			
+			<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analysis <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="requirement.html">Requirement</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="system.html">Architectural Diagrams</a></li>
+                <li><a href="designpatterns.html">Design Patterns</a></li>
+                <li><a href="usecases.html">Use Cases</a></li>
+				<li><a href="personas.html">User Personas</a></li>
+              </ul>
+            </li>
+			
+			<li><a href="tools.html">Tools</a></li>
+			<li><a href="design.html">Design</a></li>
+			
+              <li class="dropdown">
+              <a href="development.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="development.html">Development</a></li>
+                <li><a href="deployment.html">Deployment</a></li>
+                <li><a href="testing.html">Testing</a></li>
+                <li><a href="testing_strategy.html">Testing Strategy</a></li>
+                <li><a href="manual.html"></i>Manual</i></a></li>
+              </ul>
+            </li>
+			
+			<li><a href="https://github.com/DianaD96/Team13AndroidClient"><i class="fa fa-github fa-fw"></i>Git Repo</i></a></li>
+			<li><a href="http://group13.freeforums.org/"></i>Forums</i></a></li>
+			   
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+    <!-- Page Content -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+			
+                <div class="col-lg-10 col-sm-6 col-lg-offset-1">
+                    <div class="clearfix"></div>
+                     <h2 class="content-heading">MANUALS</h2>
+
+						<p class="">This section contains the system and user manuals.</p>
+						
+                        <p class="section-subheading-left"> <b> <font color="#15317E">USER MANUAL</b> </font>
+                        <p class="" align="left"> <b> <font color="#15317E"> LOG IN PAGE </font> </b></p>
+                        <p class="" align="left">In order to log in, the user has to enter their uuid (which is a unique identifier for every patient; the uuid is provided when a new user completed registration) and press "Sumbit" which will redirect the patient to the "Dashboard Page". Attempting to complete the log in without providing an uuid will authenticate the user as a "test user".</p>
+                       <p class="" align="left"> <b> <font color="#15317E"> REGISTER PAGE </font> </b></p>
+                       <p class="" align="left">In order to register the user has to press the "Register New Patient" button on the Log In Page that will redirect them to the Registration Page where the user needs to complete the provided blanks with their given name, family name, gender and hospital location. The user has to press the "Register" button which will complete the registration by saving the completed fields in the OpenMRS database and return a unique identifier (uuid) which the user is asked to keep safe for future logins. After registration, the user will be redirected to the "Dashboard" Page as the newly registered patient.</p>
+                        <p class="" align="left"> <b> <font color="#15317E"> DASHBOARD PAGE </font> </b></p>
+                        <p class="" align="left"> The "Dashboard" Page displays the application menu at the bottom of the page ("Input", "Graph", "Chat") as well as the image buttons to input their nutrition/activity/heart rate logs which are labeled as "Food", "Exercise", "Heart Rate", "Height&Weight" and "Sync Data". Clicking any of them will redirect the user to the specific page. The "Dashboard" Page also provides a drop-down menu with 2 tabs: "Profile" Page tab that will redirect the user to the Profile Page and the "Log out" tab that will sign out the user.</p>
+                        <p class="" align="left"> <b> <font color="#15317E"> FOOD PAGE </font> </b></p>
+                        <p class="" align="left"> The "Food" Page provides 3 cardviews for each meal of the day: breakfast, lunch and dinner. By clicking any of them will redirect the user to the "Nutrition Log" Page where they can search for any type of food (option implemented using the FatSecret API), check any food options and press OK which will redirect the user back to the "Food" Page and calculate the total number of calories for the provided meal which will be added to the total number of calories (which the calories counter above the "Sumbit" button). When the user has chosen all the meals they want to save, they will press the "Submit" button which will send the total number of calories to the OpenMRS database and redirect the user back to the "Dashboard" Page. </p>
+                        <p class="" align="left"> <b> <font color="#15317E"> EXERCISE PAGE </font> </b></p>
+                        <p class="" align="left"> The "Exercise" Page is similar to the "Food" Page in a way that the user will be provded with 5 card views to write down their activity log ("calories burned", "distance covered", "total steps", "floors climed", "active minutes"). After completing the required fields, the user can press the "Submit" button to save the data to the OpenMRS database.</p>
+                        <p class="" align="left"> <b> <font color="#15317E"> HEART RATE PAGE </font> </b></p>
+                        <p class="" align="left"> The "Heart Rate" Page provides a single cardview for the user to input their BMP (beats per minute) value. By pressing the "Submit" button, the data will be saved to the database.</p>
+                        <p class="" align="left"> <b> <font color="#15317E"> HEIGHT/WEIGHT PAGE </font> </b></p>
+                        <p class="" align="left"> The "Height/Weight" Page provides 2 cardviews, one for height input and the other one for weight input. After completing the views, the user can press the "Submit" button to save the data.</p>
+                        <p class="" align="left"> <b> <font color="#15317E"> SYNC DATA PAGE </font> </b></p>
+                        <p class="" align="left"> The "SYNC DATA" Page provides 2 buttons one for synchronisation with the GoogleFit android client and the other one for synchronisation with the FitBitHR Smartwatch. Both of them will ask the user for log in credentials and ask for permission to sync with the OpenMRS-Hypertension client.</p>
+                    
+                     <p class="" align="left"> <b> <font color="#15317E"> GRAPH PAGE </font> </b></p>
+                     <p class="" align="left"> The "GRAPH DATA" Page displays an overview of the patient's condition: a graph that shows the number of steps the user did in the last 5 days as well as his average heart rate, target heart rate, abnormalities, BMI and an average of their daily exercise (measured in minutes). To refresh the data the user can pull down the page which will fetch the data from the OpenMRS database. /p>
+                     <p class="" align="left"> <b> <font color="#15317E"> CHAT PAGE </font> </b></p>
+                     <p class="" align="left"> Before proceeding to the "Chat" Page the user will be asked to introduce their doctor's name. If no name will be provided, a test doctor will be used instead. After typing in their doctor's name and pressing the "Submit" button, the user will be redirected to the "Chat" Page where they can see the last conversation they had with their doctor. To send a new message, the user has to complete the blank space at the bottom of the page a press "Send". A notification option is also available which will let the patient know if they have a new message.</p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	    <!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="list-inline">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+						
+							<li class="pull-right">
+								<a href="#">Back to top</a>
+							</li>
+						</ul>
+					
+						<ul class="list-inline">
+							<li class="copyright text-muted small">Copyright &copy; System Engineering Project Team 13</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+
+</html>
