@@ -284,7 +284,70 @@
                                     <td> Readings will be displayed in an edit box above the sync button.</td>
                                   </tr>
                               </tbody>
-                      </table>                                    
+                      </table>    
+
+					<hr class="section-spacer-line">
+                    <p class="paragraph-description"> SyncGoogleFitService implementation </p>
+                    <p class="paragraph-smaller-description"> Automatically download GoogleFit data and upload it to OpenMRS server </p>
+					
+					<table style="text-align:left">
+                              <thead>
+                                  <tr>
+                                      <td style="background-color:#b8cce4">Steps</th>
+                                      <td style="background-color:#b8cce4">Details</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td> 1 </td>
+                                    <td> Two strings are initiated containing results of Step count and Calories from GoogleFit, user UUID, date and concept UUID. </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 2 </td>
+                                    <td> Results are obtained by calling getStep() and getCal() methods from SyncData respectively that invoke the Fitness APIs and extract the raw data. </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 3 </td>
+                                    <td> SyncGoogleFit method will submit the following strings to the OpenMRS database and return true in the info log if it succeed or an error otherwise.</td>
+                                  </tr>
+                              </tbody>
+                    </table>
+					
+					<hr class="section-spacer-line">
+                    <p class="paragraph-description"> NotifyService implementation </p>
+                    <p class="paragraph-smaller-description"> Issue a notification when there’s a new chat message from the doctor while user is not currently on the chat page </p>
+					
+					<table style="text-align:left">
+                              <thead>
+                                  <tr>
+                                      <td style="background-color:#b8cce4">Steps</th>
+                                      <td style="background-color:#b8cce4">Details</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td> 1 </td>
+                                    <td> An alarm manager is initiated when user first launch the app that is set to repeat every minute. </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 2 </td>
+                                    <td> AlarmManagerService would then invoke the NotifyService to run in the background. </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 3 </td>
+                                    <td> checkForNewMessage() would issue a POST request to OpenMRS server to check for the latest message from the doctor.</td>
+                                  </tr>
+								  <tr>
+                                    <td> 4 </td>
+                                    <td> obsDatetime of latest message on the server is used to check again a date variable, if obsDatetime is newer than the date variable then issue a notification.</td>
+                                  </tr>
+								  <tr>
+                                    <td> 5 </td>
+                                    <td> The date variable is updated everytime a notification is issued or when chat activity is alive to avoid repetitions.</td>
+                                  </tr>
+                              </tbody>
+                    </table>
+					
 
                         
                 </div>
