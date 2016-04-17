@@ -25,9 +25,10 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+    <link href="css/tablestyle.css" rel="stylesheet" >
     <link href="css/carousel.css" rel="stylesheet">
-	<link href="css/navbar-fixed-top.css" rel="stylesheet">
-	<link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -66,10 +67,10 @@
                 <li><a href="client.html">Client</a></li>
               </ul>
             </li>
-			
-			<li><a href="project_management.html">Project Management</a></li>
-			
-			<li class="dropdown">
+      
+      <li><a href="project_management.html">Project Management</a></li>
+      
+      <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analysis <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="requirement.html">Requirement</a></li>
@@ -77,26 +78,27 @@
                   <li><a href="system.html">Architectural Diagrams</a></li>
                 <li><a href="designpatterns.html">Design Patterns</a></li>
                   <li><a href="usecases.html">Use Cases</a></li>
-				<li><a href="personas.html">User Personas</a></li>
+        <li><a href="personas.html">User Personas</a></li>
               </ul>
             </li>
-			
-			<li><a href="tools.html">Tools</a></li>
-			<li><a href="design.html">Design</a></li>
-			
+      
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="design.html">Design</a></li>
+      
               <li class="dropdown">
-              <a href="development.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="development.html">Development</a></li>
                 <li><a href="deployment.html">Deployment</a></li>
                 <li><a href="testing.html">Testing</a></li>
                 <li><a href="testing_strategy.html">Testing Strategy</a></li>
-                <li><a href="manual.html"></i>Manual</i></a></li>
+                 <li><a href="manual.html"></i>Manual</i></a></li>
               </ul>
             </li>
-			
-			<li><a href="https://github.com/DianaD96/Team13AndroidClient"><i class="fa fa-github fa-fw"></i>Git Repo</i></a></li>
-			   
+      
+      <li><a href="https://github.com/DianaD96/Team13AndroidClient"><i class="fa fa-github fa-fw"></i>Git Repo</i></a></li>
+      <li><a href="http://group13.freeforums.org/"></i>Forums</i></a></li>
+         
             
           </ul>
         </div><!--/.nav-collapse -->
@@ -106,43 +108,215 @@
 
     <!-- Page Content -->
 
-    <div class="content-section-a-height">
+<div class="content-section-a-height">
 
         <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-sm-6 col-lg-offset-1">
+                
+                    <h2 class="content-heading">Project Development</h2>
 
-                    <h2 class="content-heading">Development</h2>
-					
-						<p class="paragraph">To be included soon</p>
+                    <div class="col-lg">
+                    <h2 class="subheading-color">Technical Achievement</h2>
+                     <hr class="section-spacer-line">
+                    </div>
+                    
+                    <p class="paragraph-description"> Listed below are the technical achievement the team has achieved over the development of the project.</p>
+                    <li class="paragraph-list"> Setting up OpenMRS platform on individual computer and Bupa Server </li>
+                    <li class="paragraph-list"> Posting and receiving data from OpenMRS server to and fro mobile app </li>
+                    <li class="paragraph-list"> Implementing data </li>
+                    <li class="paragraph-list"> GoogleFit API integration </li>
+                    <li class="paragraph-list"> Fitbit API integration </li>
+                    <li class="paragraph-list"> FatSecret API integration </li>
+                    <li class="paragraph-list"> Graph data </li>
+                    <li class="paragraph-list"> Chat page and notification </li>
+
+                    
 
 
+                    <div class="col-lg">
+                    <h2 class="subheading-color" style="padding-top:30px">Implementation Details</h2>
+                     <hr class="section-spacer-line">
+                    </div>
+
+                    <p class="paragraph-description" style="margin-bottom:-20px"> SyncData - Fitbit Authentication implementation </p>
+    
+                    <table style="text-align:left">
+                              <thead>
+                                  <tr >
+                                      <td style="background-color:#b8cce4">Steps</th>
+                                      <td style="background-color:#b8cce4">Details</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td> 1 </td>
+                                    <td> Implementation of Chrome Custom Tabs to allow user to access Fitbit Authentication page </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 2 </td>
+                                    <td> User will be asked to login to their Fitbit account and allow our app to view their data </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 3 </td>
+                                    <td> Upon user consent, user will be redirected back to our app by a redirect url (openmrs://logincallback ) </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 4 </td>
+                                    <td> An intent filter (SyncFitbitAuthorization class) has been set up in our app to capture the redirect url from Fitbit </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 5 </td>
+                                    <td> Redirect URL contains authorization code which we will extract and save in our app </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 6 </td>
+                                    <td> A request is sent to Fitbit with the user Authorization code to exchange for an access and refresh token </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 7 </td>
+                                    <td> The Fitbit response is then transformed into a JSON object to extract the access and refresh token to be saved to the app </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 8 </td>
+                                    <td> User can now pull their own Fitbit data by clicking "Sync Fitbit" button on SyncData page. </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 9 </td>
+                                    <td> When Sync Fitbit button is clicked, the SyncFitbitService will be called (See SyncFitbitService implementation details) </td>
+                                  </tr>
+                              </tbody>
+                    </table>
+
+                     <hr class="section-spacer-line">      
+                     <p class="paragraph-description"> SyncFitbitService implementation</p>
+                     <p class="paragraph-smaller-description"> Automatically download appropriate Fitbit data and upload it to OpenMRS server, followed by checking the data from OpenMRS and saving it to app local database </p>
+
+                    <table style="text-align:left">
+                              <thead>
+                                  <tr >
+                                      <td style="background-color:#b8cce4">Steps</th>
+                                      <td style="background-color:#b8cce4">Details</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td> 1 </td>
+                                    <td> An array of String containing the activities (activity, heartRate, food, sleep ) URL is initiated. </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 2 </td>
+                                    <td> The String array is passed as a parameter to getUserData method which uses a for loop to loop through the activities and requesting data from Fitbit. (This is needed because Fitbit doesn't provide all the needed data under one URL request )</td>
+                                  </tr>
+                                  <tr>
+                                    <td> 3 </td>
+                                    <td> The individual response from each activities is converted into a JSON Object which is then passed to "getFitbitData" method which extracts the necessary data that our app requires and stores it in a variable which will be used to upload to the OpenMRS server.</td>
+                                  </tr>
+                                  <tr>
+                                    <td> 4 </td>
+                                    <td> Once all the needed data has been extracted, the "syncFitBit" method is called to check if the data from FItbit is correct before uploading it to the OpenMRS server</td>
+                                  </tr>
+                                  <tr>
+                                    <td> 5 </td>
+                                    <td> The SyncGraphService service is called to download the data from OpenMRS to our local database ( Data downloaded from OpenMRS instead of using the data from Fitbit because the data might be different as there are other way of uploading data to OpenMRS server as well [ GoogleFit and Manual input ].) </td>
+                                  </tr>
+                            </tbody>
+                    </table>
+
+                    <hr class="section-spacer-line">
+                    <p class="paragraph-description"> SyncGraphService implementation </p>
+                    <p class="paragraph-smaller-description"> Downloads data from OpenMRS server, process it and then stores it into app local database </p>
+            
+
+                      <table style="text-align:left">
+                              <thead>
+                                  <tr >
+                                      <td style="background-color:#b8cce4">Steps</th>
+                                      <td style="background-color:#b8cce4">Details</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+
+                                  <tr>
+                                    <td> 1 </td>
+                                    <td> Array of String, Dates and GraphData are initialised which will be used to store the data obtained from OpenMRS over the past 5 days </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 2 </td>
+                                    <td> "pullData" function is called which takes in the array of dates (past 5 days), and the REST GET response from OpenMRS containing the user's data. The function then check the response for observations we require (heart rate, steps, etc..) and calls the "checkExerciseDate" function.  </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 3 </td>
+                                    <td> The "checkExerciseDate" function checks the response if it matches the dates we are looking for (past 5 days), and if it does it will store the data into the GraphData object.</td>
+                                  </tr>
+                                  <tr>
+                                    <td> 4 </td>
+                                    <td> Array of GraphData is then inserted/updated into the local database according to dates.</td>
+                                  </tr>
+                              </tbody>
+                      </table> 
+
+                    <hr class="section-spacer-line">
+                    <p class="paragraph-description" style="margin-bottom:-20px"> SyncData - GoogleFit Authentication implementation  </p>
+
+                    <table style="text-align:left">
+                              <thead>
+                                  <tr>
+                                      <td style="background-color:#b8cce4">Steps</th>
+                                      <td style="background-color:#b8cce4">Details</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td> 1 </td>
+                                    <td> First time user will be asked to choose the Google Account they used for Google Fit in a pop up dialog. </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 2 </td>
+                                    <td> This allows the app to connect to Fitness APIs.</td>
+                                  </tr>
+                                  <tr>
+                                    <td> 3 </td>
+                                    <td> The app will automatically invoke readings of Step count and Calories data using Fitness APIs.</td>
+                                  </tr>
+                                  <tr>
+                                    <td> 4 </td>
+                                    <td> Readings will be displayed in an edit box above the sync button.</td>
+                                  </tr>
+                              </tbody>
+                      </table>                                    
+
+                        
+                </div>
+             </div>    
         </div>
         <!-- /.container -->
 
     </div>
 
 
-	    <!-- Footer -->
-		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="list-inline">
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-						
-							<li class="pull-right">
-								<a href="#">Back to top</a>
-							</li>
-						</ul>
-					
-						<ul class="list-inline">
-							<li class="copyright text-muted small">Copyright &copy; System Engineering Project Team 13</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
+      <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-inline">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+            
+              <li class="pull-right">
+                <a href="#">Back to top</a>
+              </li>
+            </ul>
+          
+            <ul class="list-inline">
+              <li class="copyright text-muted small">Copyright &copy; System Engineering Project Team 13</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- jQuery -->
