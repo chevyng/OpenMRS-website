@@ -32,8 +32,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
-	<link href="css/navbar-fixed-top.css" rel="stylesheet">
-	<link href="css/landing-page.css" rel="stylesheet">
+	  <link href="css/navbar-fixed-top.css" rel="stylesheet">
+	  <link href="css/landing-page.css" rel="stylesheet">
 
 
     <!-- Custom Fonts -->
@@ -63,49 +63,67 @@
           </button>
           <a class="navbar-brand" href="index.html">OpenMRS-Hypertension</a>
         </div>
+
+
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
+
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overview <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Initial Problem</a></li>
+                <li><a href="initial_problem.html">Initial Problem</a></li>
                 <li><a href="client.html">Client</a></li>
-              </ul>
-            </li>
-			
-			<li><a href="project_management.html">Project Management</a></li>
-			
-			<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analysis <span class="caret"></span></a>
-              <ul class="dropdown-menu">
                 <li><a href="requirement.html">Requirement</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="system.html">Architectural Diagrams</a></li>
-                <li><a href="designpatterns.html">Design Patterns</a></li>
-                <li><a href="usecases.html">Use Cases</a></li>
-				<li><a href="personas.html">User Personas</a></li>
               </ul>
             </li>
-			
-			<li><a href="tools.html">Tools</a></li>
-			<li><a href="design.html">Design</a></li>
-			
-              <li class="dropdown">
+            
+
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Management<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                 <li><a href="project_management.html">Project Management</a></li>
+                 <li><a href="workpackages.html">Work Packages</a></li>
+                 <li><a href="biweekly_report.html">Biweekly Reports</a></li>
+                 <li><a href="tools.html">Tools</a></li>
+               </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="research.html">Research</a></li>
+                <li><a href="usecases.html">Use Cases</a></li>
+                <li><a href="personas.html">User Personas</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="design.html">Design</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Testing<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="testing_strategy.html">Testing Strategy</a></li>
+                <li><a href="testing.html">Testing</a></li>
+              </ul>
+            </li>
+
+            
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="development.html">Development</a></li>
+                <li><a href="development.html">Achievements & Implementation Details</a></li>
+                <li><a href="system.html">Architectural Diagrams</a></li>
+                <li><a href="designpatterns.html">Design Patterns</a></li>
                 <li><a href="deployment.html">Deployment</a></li>
-                <li><a href="testing.html">Testing</a></li>
-                <li><a href="testing_strategy.html">Testing Strategy</a></li>
-                 <li><a href="manual.html"></i>Manual</i></a></li>
               </ul>
             </li>
-			
-			<li><a href="https://github.com/DianaD96/Team13AndroidClient"><i class="fa fa-github fa-fw"></i>Git Repo</i></a></li>
-			<li><a href="http://group13.freeforums.org/"></i>Forums</i></a></li>
-			   
 
+            <li><a href="manual.html">Manual</a></li>
+                        
+            <li><a href="https://github.com/DianaD96/Team13AndroidClient"><i class="fa fa-github fa-fw"></i>GitHub</a></li>
+
+            <li><a href="http://group13.freeforums.org/">Forum</a></li>
+                        
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -121,32 +139,19 @@
 			
                 <div class="col-lg-10 col-sm-6 col-lg-offset-1">
                     <div class="clearfix"></div>
-                     <h2 class="content-heading">MANUALS</h2>
+                     <h2 class="content-heading">Manuals</h2>
+                     
 
-						<p class="">This section contains the system and user manuals.</p>
-						
-                        <p class="section-subheading-left"> <b> <font color="#15317E">USER MANUAL</b> </font>
-                        <p class="" align="left"> <b> <font color="#15317E"> LOG IN PAGE </font> </b></p>
-                        <p class="" align="left">In order to log in, the user has to enter their uuid (which is a unique identifier for every patient; the uuid is provided when a new user completed registration) and press "Sumbit" which will redirect the patient to the "Dashboard Page". Attempting to complete the log in without providing an uuid will authenticate the user as a "test user".</p>
-                       <p class="" align="left"> <b> <font color="#15317E"> REGISTER PAGE </font> </b></p>
-                       <p class="" align="left">In order to register the user has to press the "Register New Patient" button on the Log In Page that will redirect them to the Registration Page where the user needs to complete the provided blanks with their given name, family name, gender and hospital location. The user has to press the "Register" button which will complete the registration by saving the completed fields in the OpenMRS database and return a unique identifier (uuid) which the user is asked to keep safe for future logins. After registration, the user will be redirected to the "Dashboard" Page as the newly registered patient.</p>
-                        <p class="" align="left"> <b> <font color="#15317E"> DASHBOARD PAGE </font> </b></p>
-                        <p class="" align="left"> The "Dashboard" Page displays the application menu at the bottom of the page ("Input", "Graph", "Chat") as well as the image buttons to input their nutrition/activity/heart rate logs which are labeled as "Food", "Exercise", "Heart Rate", "Height&Weight" and "Sync Data". Clicking any of them will redirect the user to the specific page. The "Dashboard" Page also provides a drop-down menu with 2 tabs: "Profile" Page tab that will redirect the user to the Profile Page and the "Log out" tab that will sign out the user.</p>
-                        <p class="" align="left"> <b> <font color="#15317E"> FOOD PAGE </font> </b></p>
-                        <p class="" align="left"> The "Food" Page provides 3 cardviews for each meal of the day: breakfast, lunch and dinner. By clicking any of them will redirect the user to the "Nutrition Log" Page where they can search for any type of food (option implemented using the FatSecret API), check any food options and press OK which will redirect the user back to the "Food" Page and calculate the total number of calories for the provided meal which will be added to the total number of calories (which the calories counter above the "Sumbit" button). When the user has chosen all the meals they want to save, they will press the "Submit" button which will send the total number of calories to the OpenMRS database and redirect the user back to the "Dashboard" Page. </p>
-                        <p class="" align="left"> <b> <font color="#15317E"> EXERCISE PAGE </font> </b></p>
-                        <p class="" align="left"> The "Exercise" Page is similar to the "Food" Page in a way that the user will be provded with 5 card views to write down their activity log ("calories burned", "distance covered", "total steps", "floors climed", "active minutes"). After completing the required fields, the user can press the "Submit" button to save the data to the OpenMRS database.</p>
-                        <p class="" align="left"> <b> <font color="#15317E"> HEART RATE PAGE </font> </b></p>
-                        <p class="" align="left"> The "Heart Rate" Page provides a single cardview for the user to input their BMP (beats per minute) value. By pressing the "Submit" button, the data will be saved to the database.</p>
-                        <p class="" align="left"> <b> <font color="#15317E"> HEIGHT/WEIGHT PAGE </font> </b></p>
-                        <p class="" align="left"> The "Height/Weight" Page provides 2 cardviews, one for height input and the other one for weight input. After completing the views, the user can press the "Submit" button to save the data.</p>
-                        <p class="" align="left"> <b> <font color="#15317E"> SYNC DATA PAGE </font> </b></p>
-                        <p class="" align="left"> The "SYNC DATA" Page provides 2 buttons one for synchronisation with the GoogleFit android client and the other one for synchronisation with the FitBitHR Smartwatch. Both of them will ask the user for log in credentials and ask for permission to sync with the OpenMRS-Hypertension client.</p>
-                    
-                     <p class="" align="left"> <b> <font color="#15317E"> GRAPH PAGE </font> </b></p>
-                     <p class="" align="left"> The "GRAPH DATA" Page displays an overview of the patient's condition: a graph that shows the number of steps the user did in the last 5 days as well as his average heart rate, target heart rate, abnormalities, BMI and an average of their daily exercise (measured in minutes). To refresh the data the user can pull down the page which will fetch the data from the OpenMRS database. /p>
-                     <p class="" align="left"> <b> <font color="#15317E"> CHAT PAGE </font> </b></p>
-                     <p class="" align="left"> Before proceeding to the "Chat" Page the user will be asked to introduce their doctor's name. If no name will be provided, a test doctor will be used instead. After typing in their doctor's name and pressing the "Submit" button, the user will be redirected to the "Chat" Page where they can see the last conversation they had with their doctor. To send a new message, the user has to complete the blank space at the bottom of the page a press "Send". A notification option is also available which will let the patient know if they have a new message.</p>
+						          <ul class="list-inline intro-social-buttons" align="left" style="padding-top:30px;">
+                         <li>
+                            <a href="manuals/SystemManual.pdf">
+                              <img class="fancybox" src="images/system_manual.png" alt="System Manual" title="System Manual" style="padding-right:50px">
+                            </a>
+                            <a href="manuals/UserManual.pdf">
+                              <img class="fancybox" src="images/user_manual.png" alt="User Manual" title="User Manual" style="padding-left:50px">
+                            </a> 
+                          </li>
+                      </ul>
 
                     </p>
                 </div>
