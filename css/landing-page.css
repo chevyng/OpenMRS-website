@@ -248,6 +248,14 @@ h6 {
     margin-bottom: 25px;
 }
 
+.paragraph-description-large {
+    font-size: 25px;
+    font-weight: 1300;
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
 .paragraph-smaller-description {
     font-size: 16px;
     font-weight: 700;
@@ -269,6 +277,14 @@ h6 {
     text-align: left;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.paragraph-list-big {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .image-caption {
