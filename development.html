@@ -57,49 +57,67 @@
           </button>
           <a class="navbar-brand" href="index.html">OpenMRS-Hypertension</a>
         </div>
+
+
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
+
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Overview <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="initial_problem.html">Initial Problem</a></li>
                 <li><a href="client.html">Client</a></li>
-              </ul>
-            </li>
-      
-      <li><a href="project_management.html">Project Management</a></li>
-      
-      <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Analysis <span class="caret"></span></a>
-              <ul class="dropdown-menu">
                 <li><a href="requirement.html">Requirement</a></li>
-                <li><a href="research.html">Research</a></li>
-                  <li><a href="system.html">Architectural Diagrams</a></li>
-                <li><a href="designpatterns.html">Design Patterns</a></li>
-                  <li><a href="usecases.html">Use Cases</a></li>
-        <li><a href="personas.html">User Personas</a></li>
               </ul>
             </li>
-      
-      <li><a href="tools.html">Tools</a></li>
-      <li><a href="design.html">Design</a></li>
-      
-              <li class="dropdown">
+            
+
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project Management<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                 <li><a href="project_management.html">Project Management</a></li>
+                 <li><a href="workpackages.html">Work Packages</a></li>
+                 <li><a href="biweekly_report.html">Biweekly Reports</a></li>
+                 <li><a href="tools.html">Tools</a></li>
+               </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="research.html">Research</a></li>
+                <li><a href="usecases.html">Use Cases</a></li>
+                <li><a href="personas.html">User Personas</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="design.html">Design</a></li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Testing<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="testing_strategy.html">Testing Strategy</a></li>
+                <li><a href="testing.html">Testing</a></li>
+              </ul>
+            </li>
+
+            
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Development <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="development.html">Development</a></li>
+                <li><a href="development.html">Achievements & Implementation Details</a></li>
+                <li><a href="system.html">Architectural Diagrams</a></li>
+                <li><a href="designpatterns.html">Design Patterns</a></li>
                 <li><a href="deployment.html">Deployment</a></li>
-                <li><a href="testing.html">Testing</a></li>
-                <li><a href="testing_strategy.html">Testing Strategy</a></li>
-                 <li><a href="manual.html"></i>Manual</i></a></li>
               </ul>
             </li>
-      
-      <li><a href="https://github.com/DianaD96/Team13AndroidClient"><i class="fa fa-github fa-fw"></i>Git Repo</i></a></li>
-      <li><a href="http://group13.freeforums.org/"></i>Forums</i></a></li>
-         
-            
+
+            <li><a href="manual.html">Manual</a></li>
+                        
+            <li><a href="https://github.com/DianaD96/Team13AndroidClient"><i class="fa fa-github fa-fw"></i>GitHub</a></li>
+
+            <li><a href="http://group13.freeforums.org/">Forum</a></li>
+                        
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -124,23 +142,25 @@
                     <p class="paragraph-description"> Listed below are the technical achievement the team has achieved over the development of the project.</p>
                     <li class="paragraph-list"> Setting up OpenMRS platform on individual computer and Bupa Server </li>
                     <li class="paragraph-list"> Posting and receiving data from OpenMRS server to and fro mobile app </li>
-                    <li class="paragraph-list"> Implementing data </li>
+                    <li class="paragraph-list"> Implementing local database for offline viewing </li>
                     <li class="paragraph-list"> GoogleFit API integration </li>
                     <li class="paragraph-list"> Fitbit API integration </li>
                     <li class="paragraph-list"> FatSecret API integration </li>
-                    <li class="paragraph-list"> Graph data </li>
-                    <li class="paragraph-list"> Chat page and notification </li>
+                    <li class="paragraph-list"> Graph visualization</li>
+                    <li class="paragraph-list"> Health data analytics
+                    <li class="paragraph-list"> Chat messaging and notification </li>
 
+           
                     
 
 
                     <div class="col-lg">
-                    <h2 class="subheading-color" style="padding-top:30px">Implementation Details</h2>
-                     <hr class="section-spacer-line">
+                      <h2 class="subheading-color" style="padding-top:30px">Implementation Details</h2>
+                       <hr class="section-spacer-line">            
                     </div>
 
-                    <p class="paragraph-description" style="margin-bottom:-20px"> SyncData - Fitbit Authentication implementation </p>
-    
+                    <p class="paragraph-description"> SyncData - Fitbit Authentication implementation </p>
+                    <p class="paragraph-smaller-description"> Fitbit Authentication carried out by ChromeTab and once user has authenticate, they will be redirected back to app via callback url and intent filter. </p>
                     <table style="text-align:left">
                               <thead>
                                   <tr >
