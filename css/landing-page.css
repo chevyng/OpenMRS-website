@@ -158,6 +158,13 @@ h6 {
     color: white;
 }
 
+.content-team-profile {
+    padding: 50px 0;
+    background: #2A7572;
+    text-align: center;
+    color: white;
+}
+
 .section-heading {
     margin-bottom: 30px;
     font-size: 35px;
