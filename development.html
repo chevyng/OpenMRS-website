@@ -369,6 +369,34 @@
                                   </tr>
                               </tbody>
                     </table>
+
+
+                    <hr class="section-spacer-line">
+                    <p class="paragraph-description">SearchFood - FatSecret API Implementation</p>
+                    <p class="paragraph-smaller-description">Allows the user to manually search for any type of food </p>
+					
+					<table style="text-align:left">
+                              <thead>
+                                  <tr>
+                                      <td style="background-color:#b8cce4">Steps</th>
+                                      <td style="background-color:#b8cce4">Details</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td> 1 </td>
+                                    <td> The user is automatically logged in where the OAuth authentication is done using the token key and and secret key provided in the FatSecretUtils.java. </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 2 </td>
+                                    <td> Searching for the specific food the user has requested is done in the search() method where a GET request is called onto the FatSecret server containing as a parameter the name of the food the user has typed in. </td>
+                                  </tr>
+                                  <tr>
+                                    <td> 3 </td>
+                                    <td> Displaying the response from the server is done in the displayListView() method where an arrayAdapter is used to populate the listView which will be displayed on the screen.</td>
+                                  </tr>
+                              </tbody>
+                    </table>
 					
 
                         
